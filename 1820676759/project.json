@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.08235294117647059 0.20784313725490197 0.30980392156862746"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Patrol StarCraft",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1820676759"
+}

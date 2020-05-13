@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Credits goes to reddit user SairesArt.\n\nIf you wanna grab the .mp4 files yourself, here's the reddit thread https://it.reddit.com/r/leagueoflegends/comments/9twr3v/kda_popstars_4k_wallpaper_engine_machine_learning/\n\nHave fun!",
+	"file" : "21-9-14402.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 0 0.48627450980392156"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "K/DA Akali Spray Loop",
+	"type" : "video",
+	"visibility" : "public"
+}

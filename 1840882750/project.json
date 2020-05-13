@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Original art by Espenartman https://twitter.com/Espenartman\r\n\r\nFree chicken for every follow! 🍗 https://twitch.tv/jangaskhan",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.376 0.247 0.204"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "World of Warcraft Classic Login Screen",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1840882750"
+}

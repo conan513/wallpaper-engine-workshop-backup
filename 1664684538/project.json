@@ -1,0 +1,149 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "You can use TranslucentTB to make the taskbar transparent.(Microsoft Store)",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"audio_amount" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0,
+				"order" : 110,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Audio amount",
+				"type" : "slider",
+				"value" : 1
+			},
+			"audio_exponent" : 
+			{
+				"fraction" : true,
+				"max" : 4,
+				"min" : 0,
+				"order" : 111,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Audio exponent",
+				"type" : "slider",
+				"value" : 1
+			},
+			"constant_color" : 
+			{
+				"order" : 101,
+				"text" : "Constant color (rgb effect uncheck)",
+				"type" : "bool",
+				"value" : false
+			},
+			"frequency_max" : 
+			{
+				"fraction" : true,
+				"max" : 10,
+				"min" : 0,
+				"order" : 112,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Frequency max",
+				"type" : "slider",
+				"value" : 1
+			},
+			"frequency_min" : 
+			{
+				"fraction" : true,
+				"max" : 9,
+				"min" : 0,
+				"order" : 113,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Frequency min",
+				"type" : "slider",
+				"value" : 0
+			},
+			"glare" : 
+			{
+				"order" : 105,
+				"text" : "Glare",
+				"type" : "bool",
+				"value" : false
+			},
+			"glow_strength" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 106,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Glare strength",
+				"type" : "slider",
+				"value" : 2
+			},
+			"light_pulse_effect" : 
+			{
+				"order" : 104,
+				"text" : "Light pulse effect",
+				"type" : "bool",
+				"value" : true
+			},
+			"logo_rengi" : 
+			{
+				"order" : 102,
+				"text" : "Select color",
+				"type" : "color",
+				"value" : "0 0.42745098039215684 1"
+			},
+			"renk_de_i_meli_pulse" : 
+			{
+				"order" : 107,
+				"text" : "Pulse color effect (rgb effect uncheck)",
+				"type" : "bool",
+				"value" : false
+			},
+			"rgb_effect" : 
+			{
+				"order" : 103,
+				"text" : "RGB Effect (pulse color uncheck)",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"sis" : 
+			{
+				"order" : 100,
+				"text" : "Fog effect",
+				"type" : "bool",
+				"value" : true
+			},
+			"tint_high" : 
+			{
+				"order" : 108,
+				"text" : "Tint high",
+				"type" : "color",
+				"value" : "0 0.9568627450980393 1"
+			},
+			"tint_low" : 
+			{
+				"order" : 109,
+				"text" : "Tint low",
+				"type" : "color",
+				"value" : "0 0.3843137254901961 1"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Technology" ],
+	"title" : "Windows 10 customizable",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1664684538"
+}

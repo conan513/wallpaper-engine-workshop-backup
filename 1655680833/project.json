@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Doom (3840x1080) dual-screen wallpapers",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.35294117647058826 0.09803921568627451 0.00784313725490196"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Doom",
+	"type" : "scene",
+	"visibility" : "public"
+}

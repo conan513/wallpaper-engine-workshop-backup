@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Just a short animation for desktop",
+	"file" : "Ghost Animation 4K (h.264).mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Sci-Fi" ],
+	"title" : "Destiny Ghost animation",
+	"type" : "video",
+	"visibility" : "public"
+}

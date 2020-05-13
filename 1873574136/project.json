@@ -1,0 +1,109 @@
+{
+	"description" : "The visualiser from the Corsair-O-Tron wallpaper without the logo or robot for those that just want the visualiser",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"backgroundcolor" : 
+			{
+				"order" : 103,
+				"text" : "Background color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"bottomcolor" : 
+			{
+				"condition" : "showbottom.value > 0",
+				"order" : 107,
+				"text" : "Bottom bar color",
+				"type" : "color",
+				"value" : "0 1 1"
+			},
+			"calculationtype" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Max value",
+						"value" : "max"
+					},
+					{
+						"label" : "Median",
+						"value" : "median"
+					},
+					{
+						"label" : "Mean",
+						"value" : "mean"
+					},
+					{
+						"label" : "Average",
+						"value" : "average"
+					}
+				],
+				"order" : 101,
+				"text" : "Peak calculation type",
+				"type" : "combo",
+				"value" : "max"
+			},
+			"cyclerainbow" : 
+			{
+				"condition" : "rainbowscheme.value",
+				"order" : 105,
+				"text" : "Cycle rainbow",
+				"type" : "bool",
+				"value" : false
+			},
+			"peaksensitivity" : 
+			{
+				"editable" : true,
+				"max" : 20,
+				"min" : 1,
+				"order" : 102,
+				"text" : "Peak sensitivity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"rainbowscheme" : 
+			{
+				"order" : 104,
+				"text" : "Rainbow bars",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 6,
+				"text" : "Bar color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"sensitivity" : 
+			{
+				"editable" : true,
+				"max" : 20,
+				"min" : 1,
+				"order" : 100,
+				"text" : "Audio sensitivity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"showbottom" : 
+			{
+				"max" : 650,
+				"min" : 0,
+				"order" : 106,
+				"text" : "Bottom bar height",
+				"type" : "slider",
+				"value" : "150"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"official" : true,
+	"preview" : "preview.png",
+	"tags" : [ "Abstract" ],
+	"title" : "keyboard visualiser for icue",
+	"type" : "web",
+	"visibility" : "public"
+}

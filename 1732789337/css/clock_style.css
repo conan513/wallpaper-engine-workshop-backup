@@ -1,0 +1,65 @@
+body {
+	background-color:#1C1C1C;
+	text-align:center;
+	font-family:Myriad Pro Light;
+	color: silver;
+	background-size: cover;
+    background-position: center top;
+	background-repeat:no-repeat;
+	overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+div {
+    position: relative;
+	top: 50%;
+	transform: perspective(1px) translateY(-50%);
+	color: #FFFFFF;
+	font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    text-shadow: rgb(0, 0, 0) 0px 0px 25px;
+}
+
+#date {
+	margin-top:-51px;
+	font-size:40px;
+	padding:10px;
+	font-family:Myriad Pro Light;
+	
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+#timeEU {
+	font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+	padding:10px;
+	margin-bottom:24px;
+	visibility: visible;
+	position: unset;
+	
+}
+
+#timeNA {
+	font-size:130px;
+	padding:10px;
+	margin-bottom:24px;
+	font-family:Myriad Pro Light;
+	visibility: hidden;
+	position: absolute;
+	
+}
+
+.customcolor {
+	
+}
+
+@font-face {
+    font-family: "Myriad pro light";
+    src: url("../fonts/Myriad Pro Light.otf") format("opentype");
+}

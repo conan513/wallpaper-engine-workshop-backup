@@ -1,0 +1,57 @@
+<script type="text/javascript">
+	const init = () => {
+		let y = window.innerHeight;
+
+		const elem = document.querySelector('#information')
+		elem.style.marginTop = `${y / 2 - 75}px`;
+
+		setInterval(updateTime, 1000);
+	}
+
+	const updateTime = () => {
+		const time = new Date().toString().split(' ');
+
+		const clock = {
+			month: time[1],
+			time: time[4],
+			date: time[2],
+			day: time[0]
+		};
+
+		const elems = {
+			time: document.querySelector('#time'),
+			date: document.querySelector('#date')
+		};
+
+		clock.time = clock.time.split(':');
+		clock.time.pop();
+		clock.time = clock.time.join(':');
+
+		elems.time.innerText = clock.time;
+		elems.date.innerText =
+			`${clock.day}, ${clock.month} ${clock.date}`
+	}
+
+	document.addEventListener('DOMContentLoaded', init);
+</script>
+
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+	html, body {
+		background: #111;
+	}
+	#information {
+		color: #ff6600;
+		text-shadow: 0px 0px 10px #ff6600;
+		font-family: 'Press Start 2P', cursive;
+	}
+	#time {font-size: 47px}
+	#date {font-size: 20px}
+</style>
+
+<center>
+	<div id="information">
+		<div id="time">12:00</div>
+		<div id="date">Friday, June 7th</div>
+	</div>
+</center>

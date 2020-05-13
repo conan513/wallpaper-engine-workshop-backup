@@ -1,0 +1,22 @@
+{
+	"contentrating" : "Everyone",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.01568627450980392 0.00784313725490196 0.00784313725490196"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Nature" ],
+	"title" : "falling leaves",
+	"type" : "scene",
+	"visibility" : "public"
+}

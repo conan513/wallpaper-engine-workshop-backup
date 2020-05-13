@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "来自P站画师banishment的原画\n原画地址：https://www.pixiv.net/member_illust.php?mode=medium&illust_id=74902740",
+	"file" : "车站.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Anime" ],
+	"title" : "黄昏站台，也许是在等待",
+	"type" : "video",
+	"visibility" : "public"
+}

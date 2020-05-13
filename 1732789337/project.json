@@ -1,0 +1,54 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Features:\n- Minimal Clock\n- Customizeable background and text-color\n- Changeable size for clock and date text",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"customcolor" : 
+			{
+				"order" : 100,
+				"text" : "Text Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"customint" : 
+			{
+				"max" : 250,
+				"min" : 1,
+				"order" : 102,
+				"text" : "Font size clock",
+				"type" : "slider",
+				"value" : 130
+			},
+			"customint2" : 
+			{
+				"max" : 250,
+				"min" : 1,
+				"order" : 103,
+				"text" : "Font size date",
+				"type" : "slider",
+				"value" : 40
+			},
+			"image" : 
+			{
+				"order" : 101,
+				"text" : "Background image",
+				"type" : "file"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.11 0.11 0.11"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Unspecified" ],
+	"title" : "Minimal Clock",
+	"type" : "web",
+	"visibility" : "public"
+}

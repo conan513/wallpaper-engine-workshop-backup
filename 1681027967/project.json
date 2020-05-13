@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Audio responsive Star Wars Cyberpunk wallpaper",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.016 0.098 0.263"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Cyberpunk" ],
+	"title" : "Star Wars Cyberpunk",
+	"type" : "scene",
+	"visibility" : "public"
+}

@@ -1,0 +1,25 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Dwarven inn world of warcraft.\n\nOriginal image: Loren Broach (https://www.artstation.com/artwork/yoaGO)\nMusic:\nLion's Pride-Jason Hayes\nPig and Whistle- David Arkenstone",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.643 0.667 0.812"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "World of warcraft",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1764008679"
+}

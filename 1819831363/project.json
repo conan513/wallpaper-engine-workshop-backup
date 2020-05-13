@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "For all the space lovers out there !",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0.09019607843137255 0.22745098039215686"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Landscape" ],
+	"title" : "Soft Nebula",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1819831363"
+}

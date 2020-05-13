@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Animated and looped version of the classic WoW screen.",
+	"file" : "Login Screen.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Game" ],
+	"title" : "Animated World of Warcraft Classic Login Screen",
+	"type" : "video",
+	"visibility" : "public"
+}

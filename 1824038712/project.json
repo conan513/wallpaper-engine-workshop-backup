@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "World of Warcraft:Sylvanas(4K-ANimated-UltraWide+)\r\n(Sylvanas Burning Teldrassil) BEST QUALITY\r\nBETA",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.06666666666666667 0.03529411764705882 0.00784313725490196"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Fantasy" ],
+	"title" : "World of Warcraft - Sylvanas 4K",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1824038712"
+}

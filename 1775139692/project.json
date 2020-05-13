@@ -1,0 +1,29 @@
+{
+	"contentrating" : "Everyone",
+	"dependency" : "1123815934",
+	"description" : "CLOCK",
+	"file" : "",
+	"preset" : 
+	{
+		"audioprocessing" : true,
+		"blurColor" : "1 0 0.6627450980392157",
+		"cX" : 50,
+		"cY" : 50,
+		"color" : "0.8313725490196079 0.00784313725490196 0.00784313725490196",
+		"image" : "files/DrYaRRY.jpg",
+		"isRotate" : false,
+		"radius" : 40,
+		"range" : 8,
+		"schemecolor" : "0 0.5019607843137255 0",
+		"showTime" : true,
+		"style" : 2,
+		"tSize" : 20,
+		"tStyle" : true,
+		"tX" : 50,
+		"tY" : 50
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "CLOCK",
+	"visibility" : "public"
+}

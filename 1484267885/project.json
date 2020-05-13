@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "you can burn Teldrassil down!\n\nDu magst meine Wallpaper? Ich würde mich über ein Follow auf Twitch sehr freuen :) Alternativ kannst du mir gerne Wallpaper auf Steam zukommen lassen die ich hochladen könnte.\n\nYou like my wallpapers? I would be very happy about a follow up on Twitch. Alternatively, feel free to send me wallpapers on Steam that I could upload.\n\nhttps://www.twitch.tv/soilpunk :)",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Teldrassil burning or living!? you have the power! World of Warcraft Sylvanas bfa",
+	"type" : "scene",
+	"visibility" : "public"
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corsair Corsair-o-Tron</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #logo-container {
+            width: 48vh; /* 20% of the viewport width */
+            height: 48vh;
+            position: fixed;
+            top: 8%;
+            left: 42%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo {
+            background-color: black;
+            -webkit-mask-image: url(images/Logo.svg);
+            -webkit-mask-repeat: no-repeat;
+            mask-image: url(images/Logo.svg);
+            mask-repeat: no-repeat;
+            position: absolute;
+            width: 38%;
+            height: 38%;
+        }
+
+        #ring1 {
+            background-color: black;
+            -webkit-mask-image: url(images/Asset_1.svg);
+            mask-image: url(images/Asset_1.svg);
+            position: absolute;
+            width: 78%;
+            height: 78%;
+            -webkit-animation: rotate-right 10s linear infinite;
+        }
+
+        #ring2 {
+            background-color: black;
+            -webkit-mask-image: url(images/Asset_2.svg);
+            mask-image: url(images/Asset_2.svg);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-animation: rotate-left 10s linear infinite;
+        }
+
+        #ring3 {
+            background-color: black;
+            -webkit-mask-image: url(images/Asset_3.svg);
+            mask-image: url(images/Asset_3.svg);
+            position: absolute;
+            width: 97%;
+            height: 97%;
+        }
+
+        #robot {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(images/bot_bw.png);
+            position: fixed;
+            top: 5%;
+            right: 0;
+            left: 60%;
+            height: 90%;
+        }
+
+        #renderCanvas {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            background: #000000;
+        }
+
+        #keyboardCanvas {
+            display: none;
+            background: #000000;
+        }
+
+        #mousematCanvas {
+            display: none;
+            background: #000000;
+        }
+
+        #nodeCanvas {
+            display: none;
+            background: #000000;
+        }
+
+        @-webkit-keyframes rotate-right {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes rotate-left {
+            from {
+                -webkit-transform: rotate(360deg);
+            }
+            to {
+                -webkit-transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="logo-container">
+    <div id="logo"></div>
+    <div id="ring1"></div>
+    <div id="ring2"></div>
+    <div id="ring3"></div>
+</div>
+<div id="robot"></div>
+
+<canvas id="keyboardCanvas"></canvas>
+<canvas id="mousematCanvas"></canvas>
+<canvas id="nodeCanvas"></canvas>
+<canvas id="renderCanvas"></canvas>
+
+</body>
+
+<script src="./js/chroma.min.js"></script>
+<script src="./js/TweenMax.min.js"></script>
+<script src="./js/math.min.js"></script>
+<script src="./js/main.js"></script>
+</html>
