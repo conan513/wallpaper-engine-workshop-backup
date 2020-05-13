@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "UPDATED VERSION FROM MY OTHER WALLPAPER! \n\nUpdated:\nTime (bottom right) now goes changes past 2am!\nMusic is played throughout now. No weird loops like last time!\n\nA Cyberpunk High Rise Apartment made by Tony Skeor.\n\nThere is a cycle of lights and police lights that flashes into the apartment which is a nice touch.\n\nFind more of his artwork on:\nwww.artstation.com/skeor",
+	"file" : "2_00_AM.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Cyberpunk" ],
+	"title" : "2AM Cyberpunk High Rise Apartment | Skeor | V2 | Updated!",
+	"type" : "video",
+	"visibility" : "public"
+}

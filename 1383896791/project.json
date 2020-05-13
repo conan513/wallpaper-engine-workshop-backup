@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "NFS 2015\nORIGINAL:\nhttps://www.crownedstore.com/fullscreen-page/comp-j39cz5iz/c5c6020a-803d-42de-92e6-3cbbc5f8557c/61/%3Fi%3D61%26p%3Dimk3b%26s%3Dstyle-jgre7y4o",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.1803921568627451 0.13725490196078433 0.2627450980392157"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Vehicle" ],
+	"title" : "CROWNED NISSAN GT-R",
+	"type" : "scene",
+	"visibility" : "public"
+}

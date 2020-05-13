@@ -1,0 +1,22 @@
+{
+	"contentrating" : "Everyone",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.102 0.169 0.216"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Anime" ],
+	"title" : "Tokyo",
+	"type" : "scene",
+	"visibility" : "public"
+}

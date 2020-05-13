@@ -1,0 +1,22 @@
+{
+	"contentrating" : "Everyone",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "Glowing Hexagon Magma Animated",
+	"type" : "scene",
+	"visibility" : "public"
+}

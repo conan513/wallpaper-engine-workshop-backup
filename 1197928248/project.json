@@ -1,0 +1,23 @@
+{
+	"description" : "D.Va from Overwatch By Sakimichan",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "D.Va",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : 1197928248
+}

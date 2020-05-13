@@ -1,0 +1,231 @@
+.clock--digital {
+    font-family: digital;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    transform: scale(1);
+    &.AM {
+        &:before {
+            content: "AM";
+            left: 100%;
+            position: absolute;
+            font-size: 125px;
+            line-height: 95px;
+            color: red;
+            filter: drop-shadow(0 0 5px red); // font-family: digital;
+        }
+        &:after {
+            content: "PM";
+            left: 100%;
+            bottom: 0;
+            position: absolute;
+            font-size: 125px;
+            line-height: 95px;
+            color: rgba(255, 0, 0, 0.1); // font-family: digital;
+        }
+    }
+    &.PM {
+        &:before {
+            content: "AM";
+            left: 100%;
+            position: absolute;
+            font-size: 125px;
+            line-height: 95px;
+            color: rgba(255, 0, 0, 0.1); // font-family: digital;
+        }
+        &:after {
+            content: "PM";
+            left: 100%;
+            bottom: 0;
+            position: absolute;
+            font-size: 125px;
+            line-height: 95px;
+            color: red;
+            filter: drop-shadow(0 0 5px red); // font-family: digital;
+        }
+    }
+     :before,
+     :after {
+        content: "";
+        position: absolute;
+        background: rgba(255, 0, 0, 0.1);
+        transition: width 0.25s, height 0.25s
+    }
+    .active {
+        &:before,
+        &:after {
+            filter: drop-shadow(0 0 5px red);
+            background: red;
+        }
+    }
+    .number {
+        float: left;
+        position: relative;
+        width: 12%;
+        height: 100%;
+        margin-left: 3%;
+        &:first-child {
+            margin-left: 1%;
+        }
+        .line {
+            position: absolute;
+            &.horizontal {
+                width: 100%;
+                height: 4px;
+                &:before,
+                &:after {
+                    border-radius: 2px;
+                    width: 25%;
+                    height: 100%;
+                    left: 2%;
+                }
+                &:after {
+                    left: unset;
+                    right: 0;
+                }
+            }
+            &.vertical {
+                height: 50%;
+                width: 4px;
+                &:before,
+                &:after {
+                    border-radius: 2px;
+                    width: 100%;
+                    height: 25%;
+                    top: 2%;
+                }
+                &:after {
+                    top: unset;
+                    bottom: 0;
+                }
+            }
+            &.active {
+                &.horizontal {
+                    &:before,
+                    &:after {
+                        width: 46%;
+                        height: 200%;
+                    }
+                }
+                &.vertical {
+                    &:before,
+                    &:after {
+                        height: 46%;
+                        width: 200%;
+                    }
+                }
+            }
+            &-2 {
+                right: 0;
+            }
+            &-3 {
+                top: 50%;
+            }
+            &-4 {
+                bottom: 0;
+            }
+            &-5 {
+                bottom: 0;
+            }
+            &-6 {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+    .dots {
+        float: left;
+        position: relative;
+        width: 2%;
+        height: 100%;
+        margin-right: 0%;
+        margin-left: 3%;
+        &:before,
+        &:after {
+            width: 75%;
+            height: 7.5%;
+            top: 25%;
+        }
+        &:after {
+            top: unset;
+            bottom: 25%;
+        }
+    }
+    .date {
+        text-align: center;
+        font-size: 100px;
+        filter: drop-shadow(0 0 3px black);
+        clear: left;
+    }
+    &.no-seconds {
+        padding-left: 17.5%;
+        .number-4,
+        .number-5,
+        .dots:nth-child(2n) {
+            display: none;
+        }
+        &:after,
+        &:before {
+            margin-left: -26%;
+        }
+        .date {
+            margin-left: -35%;
+        }
+    }
+    &.no-seconds.AM,
+    &.no-seconds.PM {
+        padding-left: 12.5%;
+        &:after,
+        &:before {
+            margin-left: -28.5%;
+        }
+        .date {
+            margin-left: -22%;
+        }
+    }
+    &.no-separator {
+        .dots {
+            visibility: hidden;
+        }
+    }
+    &.no-date {
+        .date {
+            display: none;
+        }
+    }
+    &.simple {
+        .number {
+            float: left;
+            position: relative;
+            width: 12%;
+            height: 100%;
+            margin-left: 3%;
+            font-size: 16em;
+            line-height: 200px;
+            text-align: right;
+            left: -10px;
+        }
+        .dots {
+            width: 3%;
+            margin-left: 2%;
+            font-size: 14em;
+            line-height: 180px;
+            left: -12px;
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+        &:before,
+        &:after {
+            left: 102%;
+            font-size: 7em;
+            line-height: 0.9em;
+        }
+    }
+}

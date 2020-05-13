@@ -1,0 +1,25 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "插画使用：https://www.pixiv.net/member_illust.php?mode=medium&illust_id=57643382\r\nhttps://www.pixiv.net/member_illust.php?mode=manga_big&illust_id=57643382&page=2",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.5529411764705883 0.3411764705882353 0.12549019607843137"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Landscape" ],
+	"title" : "✎Gantry and Sunshine",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1117170220"
+}

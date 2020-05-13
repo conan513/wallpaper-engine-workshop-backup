@@ -1,0 +1,24 @@
+{
+	"description" : "",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Unspecified" ],
+	"title" : "Firewatch - Dual Monitors(3840x1080)",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : 1137729101
+}

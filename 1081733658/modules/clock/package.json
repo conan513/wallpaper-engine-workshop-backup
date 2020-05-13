@@ -1,0 +1,27 @@
+{
+    "name": "perspective",
+    "version": "1.0.1",
+    "description": "Perspective module that will add cursor controlle perspective on HTMLElements",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "del": "^3.0.0",
+        "gulp": "*",
+        "gulp-pug": "^3.3.0",
+        "gulp-sass": "*",
+        "gulp-sourcemaps": "^2.6.0",
+        "typescript": "*",
+        "gulp-typescript": "*",
+        "run-sequence": "^2.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://Arthesian@bitbucket.org/Arthesian/perspective.git"
+    },
+    "author": "Arthesian",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/Arthesian/perspective#readme"
+}

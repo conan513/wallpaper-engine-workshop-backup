@@ -1,0 +1,18 @@
+[submodule "modules/visuals"]
+	path = modules/visuals
+	url = https://Arthesian@bitbucket.org/Arthesian/visuals.git
+[submodule "modules/visualizer"]
+	path = modules/visualizer
+	url = https://Arthesian@bitbucket.org/Arthesian/visualizer.git
+[submodule "modules/clock"]
+	path = modules/clock
+	url = https://Arthesian@bitbucket.org/Arthesian/clock.git
+[submodule "modules/perspective"]
+	path = modules/perspective
+	url = https://Arthesian@bitbucket.org/Arthesian/perspective.git
+[submodule "modules/grid"]
+	path = modules/grid
+	url = https://Arthesian@bitbucket.org/Arthesian/animated-grid.git
+[submodule "Arthesian Library"]
+	path = Arthesian Library
+	url = https://Arthesian@bitbucket.org/Arthesian/library.git

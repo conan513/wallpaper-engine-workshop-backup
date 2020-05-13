@@ -1,0 +1,34 @@
+Hi, 
+
+thanks for checking out this document.
+
+If you are interested in the source code you can find it here:
+
+Main Project (contains sub-modules):
+https://bitbucket.org/Arthesian/wallpaper-module-visualizer
+
+Below are the sub-modules that are included in the 'main' project.
+
+Visualizer Module:
+https://bitbucket.org/Arthesian/visualizer
+
+Visuals Module:
+https://bitbucket.org/Arthesian/visuals
+
+Perspective Module:
+https://bitbucket.org/Arthesian/perspective
+
+Clock Module:
+https://bitbucket.org/Arthesian/clock
+
+Animated-grid Module
+https://bitbucket.org/Arthesian/animated-grid
+
+
+All sources are free and open to use :) 
+
+Just leave my name ( Arthesian ) and url ( https://arthesia.pro ) somewhere in the credits
+
+Thank you!
+
+I hoped you will/have enjoy(ed) this wallpaper as much as I did creating it

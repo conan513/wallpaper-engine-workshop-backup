@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "The Scene was created by Corentin Wunsche in Unreal Engine 4.\n\nLink to the Source: https://vimeo.com/256031478",
+	"file" : "Parking_Scene_Loop.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Sci-Fi" ],
+	"title" : "Simon Stålenhag - Parking Scene Unreal",
+	"type" : "video",
+	"visibility" : "public",
+	"workshopid" : 1333614209
+}

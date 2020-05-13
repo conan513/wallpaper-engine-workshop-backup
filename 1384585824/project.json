@@ -1,0 +1,46 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "artist Tiggon The Great: https://twitter.com/TiggonTheGreat/status/990686704305557504\n\nJust finished watching this show. Haida is adorable so I made a wallpaper.\n\nEffects: custom colors, audio effects, breathing, shake, eye blinking\n\nTags: Haida Aggretsuko Furry Sanrio",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.55 0.85 0.8"
+			},
+			"shirtcolor" : 
+			{
+				"order" : 1,
+				"text" : "Shirt",
+				"type" : "color",
+				"value" : "1 0.25 0.18"
+			},
+			"spotcolor" : 
+			{
+				"order" : 1,
+				"text" : "Spotlight",
+				"type" : "color",
+				"value" : "0.6 0.82 1"
+			},
+			"starcolor" : 
+			{
+				"order" : 1,
+				"text" : "Star",
+				"type" : "color",
+				"value" : "1 1 1"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Anime" ],
+	"title" : "Haida (Aggretsuko)",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1384585824"
+}

@@ -1,0 +1,262 @@
+@font-face {
+  font-family: digital;
+  src: url("../fonts/digital.ttf"); }
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.container--screen {
+  width: 100vw;
+  height: 100vh; }
+
+.blockcontainer,
+.block {
+  float: left;
+  width: 10vw;
+  height: 10vh; }
+
+.block {
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 10px black); }
+
+.clock--analog {
+  border-radius: 50%;
+  background-size: 88%;
+  border: solid;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 40em;
+  width: 40em;
+  margin: auto;
+  transform: scale(0.5);
+  filter: drop-shadow(0 0 10px black);
+  background-size: cover;
+  background-position: center; }
+  .clock--analog:after {
+    background: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 5%;
+    z-index: 10; }
+  .clock--analog .minutes-container,
+  .clock--analog .hours-container,
+  .clock--analog .seconds-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .clock--analog .hours {
+    background: #000;
+    height: 20%;
+    left: 48.75%;
+    position: absolute;
+    top: 30%;
+    transform-origin: 50% 100%;
+    width: 2.5%; }
+  .clock--analog .minutes {
+    background: #000;
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%; }
+  .clock--analog .seconds {
+    background: #000;
+    height: 45%;
+    left: 49.5%;
+    position: absolute;
+    top: 14%;
+    transform-origin: 50% 80%;
+    width: 1%;
+    z-index: 8; }
+  .clock--analog .date {
+    text-align: center;
+    font-size: 50px;
+    clear: left;
+    position: absolute;
+    top: 60%;
+    width: 70%;
+    left: 15%; }
+  .clock--analog.no-date .date {
+    display: none; }
+
+.clock--digital {
+  font-family: digital;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1000px;
+  height: 200px;
+  margin: auto;
+  transform: scale(1); }
+  .clock--digital.AM:before {
+    content: "AM";
+    left: 100%;
+    position: absolute;
+    font-size: 125px;
+    line-height: 95px;
+    color: red;
+    filter: drop-shadow(0 0 5px red); }
+  .clock--digital.AM:after {
+    content: "PM";
+    left: 100%;
+    bottom: 0;
+    position: absolute;
+    font-size: 125px;
+    line-height: 95px;
+    color: rgba(255, 0, 0, 0.1); }
+  .clock--digital.PM:before {
+    content: "AM";
+    left: 100%;
+    position: absolute;
+    font-size: 125px;
+    line-height: 95px;
+    color: rgba(255, 0, 0, 0.1); }
+  .clock--digital.PM:after {
+    content: "PM";
+    left: 100%;
+    bottom: 0;
+    position: absolute;
+    font-size: 125px;
+    line-height: 95px;
+    color: red;
+    filter: drop-shadow(0 0 5px red); }
+  .clock--digital :before,
+  .clock--digital :after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 0, 0, 0.1);
+    transition: width 0.25s, height 0.25s }
+  .clock--digital .active:before, .clock--digital .active:after {
+    filter: drop-shadow(0 0 5px red);
+    background: red; }
+  .clock--digital .number {
+    float: left;
+    position: relative;
+    width: 12%;
+    height: 100%;
+    margin-left: 3%; }
+    .clock--digital .number:first-child {
+      margin-left: 1%; }
+    .clock--digital .number .line {
+      position: absolute; }
+      .clock--digital .number .line.horizontal {
+        width: 100%;
+        height: 4px; }
+        .clock--digital .number .line.horizontal:before, .clock--digital .number .line.horizontal:after {
+          border-radius: 2px;
+          width: 25%;
+          height: 100%;
+          left: 2%; }
+        .clock--digital .number .line.horizontal:after {
+          left: unset;
+          right: 0; }
+      .clock--digital .number .line.vertical {
+        height: 50%;
+        width: 4px; }
+        .clock--digital .number .line.vertical:before, .clock--digital .number .line.vertical:after {
+          border-radius: 2px;
+          width: 100%;
+          height: 25%;
+          top: 2%; }
+        .clock--digital .number .line.vertical:after {
+          top: unset;
+          bottom: 0; }
+      .clock--digital .number .line.active.horizontal:before, .clock--digital .number .line.active.horizontal:after {
+        width: 46%;
+        height: 200%; }
+      .clock--digital .number .line.active.vertical:before, .clock--digital .number .line.active.vertical:after {
+        height: 46%;
+        width: 200%; }
+      .clock--digital .number .line-2 {
+        right: 0; }
+      .clock--digital .number .line-3 {
+        top: 50%; }
+      .clock--digital .number .line-4 {
+        bottom: 0; }
+      .clock--digital .number .line-5 {
+        bottom: 0; }
+      .clock--digital .number .line-6 {
+        right: 0;
+        bottom: 0; }
+  .clock--digital .dots {
+    float: left;
+    position: relative;
+    width: 2%;
+    height: 100%;
+    margin-right: 0%;
+    margin-left: 3%; }
+    .clock--digital .dots:before, .clock--digital .dots:after {
+      width: 75%;
+      height: 7.5%;
+      top: 25%; }
+    .clock--digital .dots:after {
+      top: unset;
+      bottom: 25%; }
+  .clock--digital .date {
+    text-align: center;
+    font-size: 100px;
+    filter: drop-shadow(0 0 3px black);
+    clear: left; }
+  .clock--digital.no-seconds {
+    padding-left: 17.5%; }
+    .clock--digital.no-seconds .number-4,
+    .clock--digital.no-seconds .number-5,
+    .clock--digital.no-seconds .dots:nth-child(2n) {
+      display: none; }
+    .clock--digital.no-seconds:after, .clock--digital.no-seconds:before {
+      margin-left: -26%; }
+    .clock--digital.no-seconds .date {
+      margin-left: -35%; }
+  .clock--digital.no-seconds.AM, .clock--digital.no-seconds.PM {
+    padding-left: 12.5%; }
+    .clock--digital.no-seconds.AM:after, .clock--digital.no-seconds.AM:before, .clock--digital.no-seconds.PM:after, .clock--digital.no-seconds.PM:before {
+      margin-left: -28.5%; }
+    .clock--digital.no-seconds.AM .date, .clock--digital.no-seconds.PM .date {
+      margin-left: -22%; }
+  .clock--digital.no-separator .dots {
+    visibility: hidden; }
+  .clock--digital.no-date .date {
+    display: none; }
+  .clock--digital.simple .number {
+    float: left;
+    position: relative;
+    width: 12%;
+    height: 100%;
+    margin-left: 3%;
+    font-size: 16em;
+    line-height: 200px;
+    text-align: right;
+    left: -10px; }
+  .clock--digital.simple .dots {
+    width: 3%;
+    margin-left: 2%;
+    font-size: 14em;
+    line-height: 180px;
+    left: -12px; }
+    .clock--digital.simple .dots:before, .clock--digital.simple .dots:after {
+      display: none; }
+  .clock--digital.simple:before, .clock--digital.simple:after {
+    left: 102%;
+    font-size: 7em;
+    line-height: 0.9em; }

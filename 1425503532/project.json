@@ -1,0 +1,25 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Pac-Man and ghosts. All three avoid the cursor a bit and eventually return to their original position.\n\nSince I didn't implement infinite particle lifetime yet, they'll probably disappear after exactly 7 days of uninterrupted running.\n\nProject files for anyone who is interested: https://drive.google.com/open?id=1ON3TkYdND7vPEEs99_PaqpGNoig0UcVb\n\nUPDATE 15.07.18: Used new emission limit from latest patch to make the trail smooth and not flicker so much.",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.06666666666666667 0.06274509803921569 0.09411764705882353"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Retro" ],
+	"title" : "Pac-Man",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1425503532"
+}

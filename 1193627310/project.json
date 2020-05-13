@@ -1,0 +1,23 @@
+{
+	"description" : "This is a simple portal dual screen wallpaper with some particles and glowy stuff.\nI hope you'll enjoy :)",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Portal Dual Screen Wallpaper",
+	"type" : "scene",
+	"visibility" : "public"
+}

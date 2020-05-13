@@ -1,0 +1,24 @@
+{
+	"description" : "Neo Tokyo slightly animated",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 0 0.8823529411764706"
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Cyberpunk" ],
+	"title" : "Neo Tokyo",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : 1149864557
+}

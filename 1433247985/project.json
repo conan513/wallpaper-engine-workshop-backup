@@ -1,0 +1,25 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "直播作品2，宽屏壁纸",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.114 0.220 0.329"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Anime" ],
+	"title" : "古风~夕阳灯笼（宽屏）",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1433247985"
+}
