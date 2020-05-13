@@ -1,0 +1,81 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "* This is not my artwork * \nWorks with Duel Monitors\n-----------------------------\n- Tanjiro\n- Nezuko\n- Anime\n- Audio Visualizer\n- Music \n- Landscape  \n- Demon Slayer\n-----------------------------",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"clock_opacity" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 102,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Clock Opacity",
+				"type" : "slider",
+				"value" : 0
+			},
+			"flip_horizontal" : 
+			{
+				"order" : 104,
+				"text" : "Flip Horizontal",
+				"type" : "bool",
+				"value" : false
+			},
+			"leaves1" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 103,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Leaves Amount",
+				"type" : "slider",
+				"value" : 0.25
+			},
+			"new_property" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 101,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Visualizer Brightness",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.2823529411764706 0.29411764705882354 0.25098039215686274"
+			},
+			"visualizer" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 100,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Visualizer Opacity",
+				"type" : "slider",
+				"value" : 0
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Anime" ],
+	"title" : "Kimetsu no Yaiba",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2090338071"
+}

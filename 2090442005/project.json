@@ -1,0 +1,55 @@
+{
+	"contentrating" : "Everyone",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"god_rays" : 
+			{
+				"order" : 103,
+				"text" : "God Rays",
+				"type" : "bool",
+				"value" : true
+			},
+			"nocturne_blinking_animation" : 
+			{
+				"order" : 102,
+				"text" : "Nocturne Blinking Animation",
+				"type" : "bool",
+				"value" : true
+			},
+			"nocturne_clench_animation" : 
+			{
+				"order" : 101,
+				"text" : "Nocturne Clench Animation",
+				"type" : "bool",
+				"value" : true
+			},
+			"nocturne_movement_speed" : 
+			{
+				"fraction" : true,
+				"max" : 1.5,
+				"min" : 0.5,
+				"order" : 100,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Nocturne Movement Speed",
+				"type" : "slider",
+				"value" : 1.25
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.322 0.235 0.204"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "[Animated] League of Legends - Nocturne by Jun Seong Park",
+	"type" : "scene",
+	"version" : 0
+}

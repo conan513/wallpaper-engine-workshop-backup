@@ -1,0 +1,91 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "[b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1727210908]\u22c6 Check my all approved wallpapers here! \u22c6[/url][/b]\n\nPlease make sure to follow artist below for more amazing works!\n\u274a Support author: https://www.artstation.com/lin-a\n\u2022 https://twitter.com/AIRLIN13\n\n\u266a Tropical Chillout - Birds of Paradise\n\n\u2022 Please contact me only via [url=https://steamcommunity.com/id/historykhistoria]Steam.[/url]\n\n[img]https://i.imgur.com/p7Fv1Z6.gif[/img]",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"arm_movement_goblin_" : 
+			{
+				"order" : 104,
+				"text" : "Arm Movement (Goblin)",
+				"type" : "bool",
+				"value" : true
+			},
+			"body_movement_girl_" : 
+			{
+				"order" : 101,
+				"text" : "Body Movement (Girl)",
+				"type" : "bool",
+				"value" : true
+			},
+			"body_movement_goblin_" : 
+			{
+				"order" : 105,
+				"text" : "Body Movement (Goblin)",
+				"type" : "bool",
+				"value" : true
+			},
+			"diver_movement" : 
+			{
+				"order" : 106,
+				"text" : "Diver Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"goblin_movement" : 
+			{
+				"order" : 107,
+				"text" : "Goblin Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"goblin_movement_2" : 
+			{
+				"order" : 108,
+				"text" : "Goblin Movement #2",
+				"type" : "bool",
+				"value" : true
+			},
+			"legs_movement_2_girl_" : 
+			{
+				"order" : 103,
+				"text" : "Legs Movement #2 (Girl)",
+				"type" : "bool",
+				"value" : true
+			},
+			"legs_movement_girl_" : 
+			{
+				"order" : 102,
+				"text" : "Legs Movement (Girl)",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.20392156862745098 0.3333333333333333 0.35294117647058826"
+			},
+			"waves_speed" : 
+			{
+				"fraction" : true,
+				"max" : 8,
+				"min" : 0,
+				"order" : 100,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Waves Speed",
+				"type" : "slider",
+				"value" : 5
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "Booty Bay (WoW) by LIN @ 4K",
+	"type" : "scene",
+	"version" : 0
+}

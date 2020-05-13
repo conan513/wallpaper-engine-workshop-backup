@@ -1,0 +1,257 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Comment or add me if you find any problems.\n\n-added rainbow particles\n-organized the Options\n-added a windows XP wallpaper\n-increased max logo size\n-added bars!\n-added circle\n-Fixed user properties\n- added a rainbow gradient to the circle\n- fixed gap in bars",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"_" : 
+			{
+				"order" : 115,
+				"text" : "( ͡° ͜ʖ ͡°)",
+				"type" : "bool",
+				"value" : false
+			},
+			"_7" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "ғᴜʟʟ",
+						"value" : "1"
+					},
+					{
+						"label" : "ʜᴀʟғ  |",
+						"value" : "2"
+					},
+					{
+						"label" : "ʜᴀʟғ  _",
+						"value" : "3"
+					},
+					{
+						"label" : "ɴᴏɴᴇ",
+						"value" : "4"
+					}
+				],
+				"order" : 113,
+				"text" : "Invert",
+				"type" : "combo",
+				"value" : "4"
+			},
+			"_s" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "ɴᴏʀᴍᴀʟ",
+						"value" : "1"
+					},
+					{
+						"label" : "ʀᴀɪɴʙᴏᴡ",
+						"value" : "2"
+					},
+					{
+						"label" : "ɴᴏɴᴇ",
+						"value" : "3"
+					}
+				],
+				"order" : 105,
+				"text" : "Particles",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"_x_" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "ɢʀᴀᴅɪᴇɴᴛ",
+						"value" : "1"
+					},
+					{
+						"label" : "ʀᴀɪɴʙᴏᴡ ɢʀᴀᴅɪᴇɴᴛ",
+						"value" : "2"
+					},
+					{
+						"label" : "sᴏʟɪᴅ",
+						"value" : "3"
+					},
+					{
+						"label" : "xᴘ",
+						"value" : "4"
+					}
+				],
+				"order" : 100,
+				"text" : "Backgrounds",
+				"type" : "combo",
+				"value" : "2"
+			},
+			"bars" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "ᴡʜɪᴛᴇ",
+						"value" : "1"
+					},
+					{
+						"label" : "ʙʟᴀᴄᴋ",
+						"value" : "2"
+					}
+				],
+				"order" : 109,
+				"text" : "Bars",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"bars_alpha" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 110,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Bars Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"chromatic_aberration" : 
+			{
+				"order" : 114,
+				"text" : "Chromatic Aberration (audio)",
+				"type" : "bool",
+				"value" : true
+			},
+			"circle4" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "sᴏʟɪᴅ",
+						"value" : "1"
+					},
+					{
+						"label" : "ʀᴀɪɴʙᴏᴡ ɢʀᴀᴅɪᴇɴᴛ",
+						"value" : "2"
+					},
+					{
+						"label" : "ɴᴏɴᴇ",
+						"value" : "3"
+					}
+				],
+				"order" : 111,
+				"text" : "Circle",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"circle_color" : 
+			{
+				"order" : 112,
+				"text" : "Circle Color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"coloring" : 
+			{
+				"order" : 101,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"logo_color" : 
+			{
+				"condition" : "",
+				"order" : 103,
+				"text" : "Logo Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"logo_mode" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "sᴛɪʟʟ",
+						"value" : "1"
+					},
+					{
+						"label" : "sᴛɪʟʟ ʀᴀɪɴʙᴏᴡ",
+						"value" : "2"
+					},
+					{
+						"label" : "s.s",
+						"value" : "3"
+					},
+					{
+						"label" : "ʀᴀɪɴʙᴏᴡ s.s",
+						"value" : "4"
+					}
+				],
+				"order" : 102,
+				"text" : "Logo Mode",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"new_property" : 
+			{
+				"order" : 106,
+				"text" : "Particles Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"particle_amount" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 107,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Particle Amount",
+				"type" : "slider",
+				"value" : 0.25
+			},
+			"particle_size" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 108,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Particle Size",
+				"type" : "slider",
+				"value" : 0.25
+			},
+			"schemecolor" : 
+			{
+				"order" : 101,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"size" : 
+			{
+				"fraction" : true,
+				"max" : 0.40000000000000002,
+				"min" : 0,
+				"order" : 104,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Logo Size",
+				"type" : "slider",
+				"value" : 0.25
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Music" ],
+	"title" : "Windows Visualizer",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2067939514"
+}

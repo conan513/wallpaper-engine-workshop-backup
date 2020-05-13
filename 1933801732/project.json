@@ -1,0 +1,45 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "This clock audio visualizer blows confetti whenever bass is played and constantly shifts around all colors. When no music is played, it serves as a relaxing clock. Works great with Razer Chroma and Corsair iCUE!",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"bass_particles" : 
+			{
+				"fraction" : true,
+				"max" : 3,
+				"min" : 0,
+				"order" : 101,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Bass Particles",
+				"type" : "slider",
+				"value" : 1
+			},
+			"intclock" : 
+			{
+				"order" : 100,
+				"text" : "24 Hour Clock",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.027450980392156862 0.027450980392156862 0.027450980392156862"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Music" ],
+	"title" : "RGB Confetti Audio Visualizer with Bass Clock",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1933801732"
+}

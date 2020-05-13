@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "欢迎关注我的B站频道\"大污师DWS\"\nhttps://space.bilibili.com/59514408\n原画地址：https://www.pixiv.net/artworks/81471534\n作者    PIXIV : catzz  /  微博：三个脑袋\n创意工坊已上线：https://steamcommunity.com/id/denjia2009/myworkshopfiles/\n或wallpaperengine内直接搜索“ビール”\n转载须注明出处及原画信息",
+	"file" : "合成 1_1.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Anime" ],
+	"title" : "ビール",
+	"type" : "video",
+	"visibility" : "public"
+}

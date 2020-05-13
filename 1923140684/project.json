@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Original Screenshot : https://www.reddit.com/r/BattlefrontCaptures/comments/cf8sk3/i_have_toppled_nations_i_have_slain_kings_i_have/\nGrievous was a Kaleesh male warlord who served as a commanding officer in the military forces of the Confederacy of Independent Systems during the last years of the Galactic Republic. Although he was known by his rank as a general, Grievous was the Supreme Commander of the Separatist Droid Army that engaged the Grand Army of the Republic throughout the pan-galactic conflict of the Clone Wars. Noted for his ruthlessness and extensive cybernetic enhancements, Grievous inspired fear as he traveled across the galaxy, invading entire worlds and engaging the Jedi Knights of the Republic.",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "Damaged General Grievous - Star Wars Battlefront II",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1923140684"
+}

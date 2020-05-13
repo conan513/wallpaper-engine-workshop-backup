@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Music: The End of the World - Skeeter Davis - Piano\nhttps://youtu.be/RCM3XH4O0uY",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.447 0.486 0.486"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Sci-Fi" ],
+	"title" : "Snow [4k]",
+	"type" : "scene",
+	"visibility" : "public"
+}

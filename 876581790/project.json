@@ -1,0 +1,22 @@
+{
+	"description" : "High quality World of Warcraft Horde Crest with animated smoke effect in 4K. Made by myself, hope you enjoy :)",
+	"file" : "Horde 4K loop.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Horde 4K - World of Warcraft",
+	"type" : "video",
+	"visibility" : "public"
+}

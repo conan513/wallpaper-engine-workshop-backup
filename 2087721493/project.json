@@ -1,0 +1,32 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Original artwork: https://cdn.discordapp.com/attachments/432692867853713408/436413658227146765/d13d8164f1f5a1d6ac6e4ce3b1df2ac8.jpg\r\n\r\nBy: \r\nwilprut\r\n\r\nMusic: \r\nhttps://www.youtube.com/watch?v=B_v3O5UQg4I\r\n\r\nBy: \r\nvan xo vibes\r\n\r\nFeel free to comment about improvements and rate/favorite the wallpaper.\r\n\r\n[img]https://i.imgur.com/p7Fv1Z6.gif[/img]\r\n\r\nCheck out my other wallpapers here:\r\nhttps://steamcommunity.com/profiles/76561198856027023/myworkshopfiles/?appid=431960\r\n\r\n► DISCLAIMER ◄\r\nI don't own art or music from this wallpaper, all the rights go to their original owners. I just animated the wallpaper, if you want me to remove this, then please message me through private messaging.",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.506 0.431 0.357"
+			},
+			"text" : 
+			{
+				"order" : 100,
+				"text" : "Text",
+				"type" : "bool",
+				"value" : true
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Girls" ],
+	"title" : "Quarantine Girl",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2087721493"
+}

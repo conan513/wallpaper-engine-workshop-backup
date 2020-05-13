@@ -1,0 +1,1704 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Yet another customizable audio visualizer.\r\n\r\n[h1]Features[/h1]\r\n[list]\r\n[*] [b][u]Customizable background[/u][/b]\r\n    You can use a solid color, a local image or image folder, or some custom CSS [i][url=https://developer.mozilla.org/en-US/docs/Web/CSS/background]background[/url][/i].\r\n\r\n[*] [b][u]Customizable visualizer[/u][/b]\r\n    Several different types of visualizer. You can change color, position, size, alignment, and much more.\r\n\r\n[*] [b][u]Spotify integration[/u][/b]\r\n    This is still [b]experimental[/b], so shıt can happen and things could go [i]boom[/i].\r\n    This functionality requires you to obtain an access token from [url=https://aleab.github.io/acav-we/token]here[/url]. A simplified version of the auth server's source code is available [url=https://github.com/aleab/acav-we-server]here[/url], so in case things do go [i]boom[/i] you can self-host the server wherever you want, even in a Docker container, and keep using this functionality.\r\n\r\n[*] [b][u]iCUE support[/u][/b]\r\n\r\n[*] [b][u]This whole project is open source![/u][/b]\r\n    https://github.com/aleab/acav-we\r\n[/list]\r\n",
+	"file" : "index.html",
+	"general" : 
+	{
+		"localization" : 
+		{
+			"en-us" : 
+			{
+				"ui_$_audioSamples" : "<span class=\"text-muted\"><small>The following filters are applied sequentially in the order they are listed here.</small></span>",
+				"ui_$_audioSamples_buffer" : "<span class=\"text-muted\"><small>How many seconds of samples to buffer for normalization and smoothing purposes.</small></span>",
+				"ui_$_audioSamples_scale_Exponential" : "<span class=\"text-muted\"><small><samp>n</samp> <samp>&lt;</samp> <samp>2</samp>: Reduces higher values.</small></span><br/><span class=\"text-muted\"><small><samp>n</samp> <samp>&gt;</samp> <samp>2</samp>: Increases higher values.</small></span>",
+				"ui_$_audioSamples_scale_Gaussian" : "<span class=\"text-muted\"><small>The default settings emphasize mid-high values.</small></span><br/><span class=\"text-muted\"><small>Low values of <samp>𝜎</samp> tend to isolate and increase values close to <samp>𝜇</samp> and squash everything else down.</small></span><br/><span class=\"text-muted\"><small>The most usable values are <samp>0.4</samp> <samp>≤</samp> <samp>𝜎</samp> <samp>≤</samp> <samp>0.5</samp> and <samp>𝜇</samp> <samp>≥</samp> <samp>0.8</samp>.</small></span>",
+				"ui_$_audioSamples_scale_Logarithm" : "<span class=\"text-muted\"><small><samp>b</samp> <samp>&lt;</samp> <samp>2</samp>: Increases mid values.</small></span><br/><span class=\"text-muted\"><small><samp>b</samp> <samp>&gt;</samp> <samp>2</samp>: Reduces higher values.</small></span>",
+				"ui_$_audioSamples_scale_Logarithm$Power" : "<span class=\"text-muted\"><small>Increasing <samp>a</samp> increases the contribution of the logarithm vs the power function.</small></span><br/><span class=\"text-muted\"><small>The default settings make this function behave almost like <samp>x<sup>2</sup></samp>, but with low values less squashed and slightly lower peaks.</small></span>",
+				"ui_$_audioSamples_scale_Power" : "<span class=\"text-muted\"><small><samp>n</samp> <samp>&lt;</samp> <samp>1</samp>: Increases all values, especially lower ones, flattening the whole spectrum.</small></span><br/><span class=\"text-muted\"><small><samp>n</samp> <samp>&gt;</samp> <samp>1</samp>: Squashes lower values down.</small></span>",
+				"ui_$_clock_digital_locale" : "<span class=\"text-muted\"><small>A BCP 47 language tag; unicode extension are supported: <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#Syntax\">documentation</a>.</small></span>",
+				"ui_$_icue_spectrum_start" : "<span class=\"text-muted\"><small>The index of the first audio sample to use.</small></span><br/> ",
+				"ui_$_icue_spectrum_width" : "<span class=\"text-muted\"><small>The amount of audio samples to use.</small></span><br/> ",
+				"ui_$_spotify_art_fetch_local" : "<span class=\"text-muted\"><small><b><u>Experimental</u></b></small></span><br/><span class=\"text-muted\"><small>Use an external provider (<a href=\"https://musicbrainz.org/search\">musicbrainz.com</a>) to fetch cover arts of local files.</small></span>",
+				"ui_$_spotify_art_fetch_local_note" : "<span class=\"text-muted\"><small>Local files must contain album and artist(s) metadata, which should match as closely as possible the information provided by <a href=\"https://musicbrainz.org/search\">musicbrainz.com</a>, especially in regard to romanized names and titles; proximity, fuzzy and partial searches will be performed nonetheless in order to always find the best match.</small></span><br/><span class=\"text-muted\"><small><u>MusicBrainz&#x27;s terminology</u></small></span><br/><span class=\"text-muted\"><small>- <em>recording</em>: a song</small></span><br/><span class=\"text-muted\"><small>- <em>release-group</em>: an album, single, etc.</small></span><br/><span class=\"text-muted\"><small>- <em>release</em>: a specific version/issuing of an album, single, etc.</small></span>",
+				"ui_$_spotify_token" : "<span class=\"text-muted\"><small>To use Spotify&#x27;s overlay you need an access token. You can request a <em>token</em> <a href=\"https://aleab.github.io/acav-we/token\">here</a>.</small></span>",
+				"ui_$_spotify_token_note" : "<span class=\"text-muted\"><small><b><u>Note</u></b>: Including your <em>token</em> in shared presets won&#x27;t leak any potentially private information nor will it let other users use your access token (<samp>AT</samp>). The <em>token</em> is encrypted and only valid for a couple of minutes until it is exchanged (behind the scenes) for an actual <samp>AT</samp>, which is then saved in your device&#x27;s local storage.</small></span>",
+				"ui_$_visualizer_color_responseDegree" : "<span class=\"text-muted\"><small>Mathematical <em>degree</em> of the root of <samp>P</samp> used to control the sensitivity, or spread in some way, of the effect.</small></span>",
+				"ui_$_visualizer_color_responseProvider" : "<span class=\"text-muted\"><small>This defines which parameter or characteristic <samp>P</samp> of the audio samples to use to determine the <em>amount of effect</em> to apply to the color of each bar.</small></span><br/><span class=\"text-muted\"><small><samp><u>Value</u></samp>: the (normalized) value of the current sample.</small></span><br/><span class=\"text-muted\"><small><samp><u>Value Change</u></samp>: the (absolute) difference between the current sample and the oldest one in the buffer.</small></span>",
+				"ui_$_visualizer_color_responseRange" : "<span class=\"text-muted\"><small>The intensity of the effect, i.e. the difference between the maximum and minimum possible values of the color component(s) involved after the effect has been applied to the base color.</small></span><br/><span class=\"text-muted\"><small><u>Example</u>: for a base color with lightness 75, and a range of 35, the effect will produce a color with lightness 100 when the sample value is 1 (maximum) and 65 when the sample value is 0 (minimum).</small></span>",
+				"ui_$_visualizer_color_responseType" : "<span class=\"text-muted\"><small>This option controls what kind of transformation to apply to the color of each bar.</small></span>",
+				"ui_audioSamples" : "<h3><ins>Audio Samples</ins></h3>",
+				"ui_audioSamples_buffer" : "<span class=\"fas fa-stream fa-fw propertyIcon\"></span>Buffer Length (s)<sup class=\"text-warning\">*</sup>",
+				"ui_audioSamples_correct" : "<span class=\"fas fa-filter fa-fw propertyIcon\"></span>Correct Samples<sup class=\"text-warning\">*</sup>",
+				"ui_audioSamples_freqThreshold" : "<span class=\"far fa-tachometer-slowest fa-fw propertyIcon\"></span>Threshold",
+				"ui_audioSamples_normalize" : "<span class=\"far fa-balance-scale fa-fw propertyIcon\"></span>Normalize<sup class=\"text-warning\">*</sup>",
+				"ui_audioSamples_scale" : "<span class=\"far fa-function fa-fw propertyIcon\"></span>Scale<sup class=\"text-warning\">*</sup>&nbsp;<sup><a href=\"https://www.desmos.com/calculator/f0rirujpk8\">[1]</a></sup>",
+				"ui_audioSamples_scale_Exponential" : "n<sup>x</sup>",
+				"ui_audioSamples_scale_Exponential_base" : "&nbsp;&nbsp;<var>n</var>",
+				"ui_audioSamples_scale_Gaussian" : "Gaussian",
+				"ui_audioSamples_scale_Gaussian_deviation" : "&nbsp;&nbsp;<samp>&#120590;</samp>",
+				"ui_audioSamples_scale_Gaussian_mean" : "&nbsp;&nbsp;<samp>&#120583;</samp>",
+				"ui_audioSamples_scale_Linear" : "x",
+				"ui_audioSamples_scale_Logarithm" : "log<sub>b</sub>(x+1)",
+				"ui_audioSamples_scale_Logarithm$Power" : "a&#8201;log<sub>b</sub>(x+1) + c&#8201;x<sup>n</sup>",
+				"ui_audioSamples_scale_Logarithm$Power_a" : "&nbsp;&nbsp;<var>a</var>",
+				"ui_audioSamples_scale_Logarithm$Power_base" : "&nbsp;&nbsp;<var>b</var>",
+				"ui_audioSamples_scale_Logarithm$Power_exponent" : "&nbsp;&nbsp;<var>n</var>",
+				"ui_audioSamples_scale_Logarithm_base" : "&nbsp;&nbsp;<var>b</var>",
+				"ui_audioSamples_scale_Power" : "x<sup>n</sup>",
+				"ui_audioSamples_scale_Power_exponent" : "&nbsp;&nbsp;<var>n</var>",
+				"ui_audioSamples_volumeGain" : "<span class=\"fas fa-microphone fa-fw propertyIcon\"></span>Linear Gain",
+				"ui_background" : "<h3><ins>Background</ins></h3>",
+				"ui_background_$_css" : "<span class=\"text-muted\"><small>Only the <samp>background‑*</samp> style properties and the <samp>background</samp> shorthand are allowed.</small></span>",
+				"ui_background_color" : "&nbsp;<span class=\"fas fa-palette fa-fw propertyIcon\"></span>Color",
+				"ui_background_css" : "&nbsp;<span class=\"fab fa-css3-alt fa-fw propertyIcon\"></span>CSS",
+				"ui_background_image" : "&nbsp;<span class=\"fas fa-image fa-fw propertyIcon\"></span>Image",
+				"ui_background_playlist" : "&nbsp;<span class=\"fas fa-images fa-fw propertyIcon\"></span>Playlist",
+				"ui_background_playlistTimer" : "&nbsp;<span class=\"far fa-stopwatch fa-fw propertyIcon\"></span>Interval (hours)",
+				"ui_background_type" : "&nbsp;Type",
+				"ui_circularVisualizer" : "<h3><ins>Circular Visualizer</ins></h3>",
+				"ui_circularVisualizer_angle" : "&nbsp;Angle (deg)",
+				"ui_circularVisualizer_bars" : "<h5><ins><b>Bars</b></ins></h5>",
+				"ui_circularVisualizer_bars_height" : "&nbsp;Height (%)",
+				"ui_circularVisualizer_bars_width" : "&nbsp;Width (%)",
+				"ui_circularVisualizer_blocks" : "<h5><ins><b>Blocks</b></ins></h5>",
+				"ui_circularVisualizer_blocks_height" : "&nbsp;Height (%)",
+				"ui_circularVisualizer_blocks_thickness" : "&nbsp;Thickness (px)",
+				"ui_circularVisualizer_blocks_width" : "&nbsp;Width (%)",
+				"ui_circularVisualizer_color" : "&nbsp;Color",
+				"ui_circularVisualizer_radius" : "&nbsp;Radius (%)",
+				"ui_circularVisualizer_rotation" : "&nbsp;Rotation (deg)",
+				"ui_circularVisualizer_wave" : "<h5><ins><b>Wave</b></ins></h5>",
+				"ui_circularVisualizer_wave_fill" : "&nbsp;Fill",
+				"ui_circularVisualizer_wave_height" : "&nbsp;Height (%)",
+				"ui_circularVisualizer_wave_showMirrorWave" : "&nbsp;Mirror Wave",
+				"ui_circularVisualizer_wave_smoothness" : "&nbsp;Smoothness",
+				"ui_circularVisualizer_wave_thickness" : "&nbsp;Thickness (px)",
+				"ui_circularVisualizer_x" : "&nbsp;X (%)",
+				"ui_circularVisualizer_y" : "&nbsp;Y (%)",
+				"ui_clock" : "<h3><span class=\"far fa-clock fa-fw propertyIcon\"></span><ins>Clock</ins></h3>",
+				"ui_clock_custom_css" : "&nbsp;<span class=\"fab fa-css3-alt fa-fw propertyIcon\"></span>Style<sup class=\"text-warning\">*</sup>",
+				"ui_clock_digital_24h" : "&nbsp;24H",
+				"ui_clock_digital_font" : "&nbsp;Font",
+				"ui_clock_digital_fontsize" : "&nbsp;Font Size (px)",
+				"ui_clock_digital_locale" : "&nbsp;Locale<sup class=\"text-warning\">*</sup>",
+				"ui_clock_digital_text_color" : "&nbsp;Text Color",
+				"ui_clock_pivot" : "&nbsp;Pivot",
+				"ui_clock_position_x" : "&nbsp;X (%)",
+				"ui_clock_position_y" : "&nbsp;Y (%)",
+				"ui_clock_seconds" : "&nbsp;Show Seconds",
+				"ui_icue" : "<h3><ins>iCUE</ins></h3>",
+				"ui_icue_boost" : "&nbsp;Boost",
+				"ui_icue_spectrum_start" : "&nbsp;Spectrum Start (%)",
+				"ui_icue_spectrum_width" : "&nbsp;Spectrum Width (%)",
+				"ui_limitFps" : "Limit FPS<sup class=\"text-warning\">*</sup>",
+				"ui_note1" : "<span class=\"text-muted\"><small><sup><a href=\"https://www.desmos.com/calculator/f0rirujpk8\">[1]</a></sup> Graphical comparison of the scaling functions.</small></span><br/><span class=\"text-muted\"><small><sup><a href=\"https://www.desmos.com/calculator/4ozdtjxb3r\">[2]</a></sup> Graphical visualization of the smoothing function.</small></span>",
+				"ui_note2" : "<span class=\"text-muted\"><small><sup><a href=\"http://colorizer.org/\">[3]</a></sup> Color spaces comparison and conversions.</small></span><br/> ",
+				"ui_notes" : "<h3 class=\"text-muted\"><ins>Notes</ins></h3>",
+				"ui_showAdvancedOptions" : "Show Advanced Options<sup class=\"text-warning\">*</sup>",
+				"ui_showDescriptions" : "Show Descriptions",
+				"ui_showStats" : "Show Stats<sup class=\"text-warning\">*</sup>",
+				"ui_spotify" : "<h3><span class=\"text-white fab fa-spotify fa-fw propertyIcon\"></span><ins>Spotify</ins></h3>",
+				"ui_spotify_art" : "<h5><ins><b>Cover Art / Icon</b></ins></h5>",
+				"ui_spotify_art_fetch_local" : "&nbsp;&nbsp;&nbsp;Fetch Local",
+				"ui_spotify_art_fetch_local_cache_age" : "&nbsp;&nbsp;&nbsp;Cache (days)<sup class=\"text-warning\">*</sup>",
+				"ui_spotify_art_type" : "&nbsp;&nbsp;&nbsp;Type",
+				"ui_spotify_backend_url" : "&nbsp;Backend URL<sup class=\"text-warning\">*</sup>",
+				"ui_spotify_background" : "<h5><ins><b>Background</b></ins></h5>",
+				"ui_spotify_background_color" : "&nbsp;&nbsp;&nbsp;<span class=\"fas fa-palette fa-fw propertyIcon\"></span>Color",
+				"ui_spotify_background_color_alpha" : "&nbsp;&nbsp;&nbsp;Alpha",
+				"ui_spotify_background_css" : "&nbsp;&nbsp;&nbsp;<span class=\"fab fa-css3-alt fa-fw propertyIcon\"></span>CSS",
+				"ui_spotify_background_type" : "&nbsp;&nbsp;&nbsp;Type",
+				"ui_spotify_font_size" : "&nbsp;Font Size (px)",
+				"ui_spotify_pivot" : "&nbsp;Pivot",
+				"ui_spotify_position_x" : "&nbsp;X (%)",
+				"ui_spotify_position_y" : "&nbsp;Y (%)",
+				"ui_spotify_progressbar" : "<h5><ins><b>Progress Bar</b></ins></h5>",
+				"ui_spotify_progressbar_color" : "&nbsp;&nbsp;&nbsp;Color",
+				"ui_spotify_progressbar_position" : "&nbsp;&nbsp;&nbsp;Position",
+				"ui_spotify_scroll" : "<h5><ins><b>Text Scrolling</b></ins></h5>",
+				"ui_spotify_scroll_auto_delay" : "&nbsp;&nbsp;&nbsp;Delay (s)",
+				"ui_spotify_scroll_speed" : "&nbsp;&nbsp;&nbsp;Speed (px/s)",
+				"ui_spotify_scroll_type" : "&nbsp;&nbsp;&nbsp;Type",
+				"ui_spotify_text_color" : "&nbsp;Text Color",
+				"ui_spotify_token" : "&nbsp;Token",
+				"ui_spotify_width" : "&nbsp;Width (px)",
+				"ui_verticalVisualizer" : "<h3><ins>Vertical Visualizer</ins></h3>",
+				"ui_verticalVisualizer_alignment" : "&nbsp;Alignment",
+				"ui_verticalVisualizer_bars" : "<h5><ins><b>Bars</b></ins></h5>",
+				"ui_verticalVisualizer_bars_borderRadius" : "&nbsp;Border Radius (%)",
+				"ui_verticalVisualizer_bars_height" : "&nbsp;Height (%)",
+				"ui_verticalVisualizer_bars_width" : "&nbsp;Width (%)",
+				"ui_verticalVisualizer_blocks" : "<h5><ins><b>Blocks</b></ins></h5>",
+				"ui_verticalVisualizer_blocks_height" : "&nbsp;Height (%)",
+				"ui_verticalVisualizer_blocks_thickness" : "&nbsp;Thickness (px)",
+				"ui_verticalVisualizer_blocks_width" : "&nbsp;Width (%)",
+				"ui_verticalVisualizer_color" : "&nbsp;Color",
+				"ui_verticalVisualizer_position" : "&nbsp;Position (%)",
+				"ui_verticalVisualizer_wave" : "<h5><ins><b>Wave</b></ins></h5>",
+				"ui_verticalVisualizer_wave_fill" : "&nbsp;Fill",
+				"ui_verticalVisualizer_wave_height" : "&nbsp;Height (%)",
+				"ui_verticalVisualizer_wave_showMirrorWave" : "&nbsp;Mirror Wave",
+				"ui_verticalVisualizer_wave_smoothness" : "&nbsp;Smoothness",
+				"ui_verticalVisualizer_wave_thickness" : "&nbsp;Thickness (px)",
+				"ui_verticalVisualizer_width" : "&nbsp;Width (%)",
+				"ui_visualizer" : "<h3><ins>Visualizer</ins></h3>",
+				"ui_visualizer_color_responseDegree" : "&nbsp;&nbsp;&nbsp;Degree<sup class=\"text-warning\">*</sup>",
+				"ui_visualizer_color_responseProvider" : "&nbsp;&nbsp;&nbsp;React to<sup class=\"text-warning\">*</sup>",
+				"ui_visualizer_color_responseRange" : "&nbsp;&nbsp;&nbsp;Range",
+				"ui_visualizer_color_responseType" : "&nbsp;Color Response&nbsp;<sup><a href=\"http://colorizer.org/\">[3]</a></sup>",
+				"ui_visualizer_color_responseValueGain" : "&nbsp;&nbsp;&nbsp;Gain<sup class=\"text-warning\">*</sup>",
+				"ui_visualizer_color_response_toHue" : "&nbsp;&nbsp;&nbsp;Max Color (Hue)",
+				"ui_visualizer_flipFrequencies" : "&nbsp;Flip Frequencies",
+				"ui_visualizer_smoothing" : "&nbsp;Smoothing<sup class=\"text-warning\">*</sup>&nbsp;<sup><a href=\"https://www.desmos.com/calculator/4ozdtjxb3r\">[2]</a></sup>",
+				"ui_visualizer_type" : "&nbsp;Type"
+			}
+		},
+		"properties" : 
+		{
+			"$_audioSamples" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value)",
+				"order" : 101,
+				"text" : "ui_$_audioSamples",
+				"type" : "text"
+			},
+			"$_audioSamples_buffer" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value)",
+				"order" : 121,
+				"text" : "ui_$_audioSamples_buffer",
+				"type" : "text"
+			},
+			"$_audioSamples_scale_Exponential" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value) && audioSamples_scale.value === 'Exponential'",
+				"order" : 111,
+				"text" : "ui_$_audioSamples_scale_Exponential",
+				"type" : "text"
+			},
+			"$_audioSamples_scale_Gaussian" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value) && audioSamples_scale.value === 'Gaussian'",
+				"order" : 111,
+				"text" : "ui_$_audioSamples_scale_Gaussian",
+				"type" : "text"
+			},
+			"$_audioSamples_scale_Logarithm" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value) && audioSamples_scale.value === 'Logarithm'",
+				"order" : 111,
+				"text" : "ui_$_audioSamples_scale_Logarithm",
+				"type" : "text"
+			},
+			"$_audioSamples_scale_Logarithm$Power" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value) && audioSamples_scale.value === 'Logarithm$Power'",
+				"order" : 111,
+				"text" : "ui_$_audioSamples_scale_Logarithm$Power",
+				"type" : "text"
+			},
+			"$_audioSamples_scale_Power" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value) && audioSamples_scale.value === 'Power'",
+				"order" : 111,
+				"text" : "ui_$_audioSamples_scale_Power",
+				"type" : "text"
+			},
+			"$_clock_digital_locale" : 
+			{
+				"condition" : "showAdvancedOptions.value && clock.value",
+				"order" : 2033,
+				"text" : "ui_$_clock_digital_locale",
+				"type" : "text"
+			},
+			"$_icue_spectrum_start" : 
+			{
+				"condition" : "showDescriptions.value && icue.value",
+				"order" : 6003,
+				"text" : "ui_$_icue_spectrum_start",
+				"type" : "text"
+			},
+			"$_icue_spectrum_width" : 
+			{
+				"condition" : "showDescriptions.value && icue.value",
+				"order" : 6005,
+				"text" : "ui_$_icue_spectrum_width",
+				"type" : "text"
+			},
+			"$_spotify_art_fetch_local" : 
+			{
+				"condition" : "(spotify.value && spotify_art.value) && spotify_art_type.value === 'AlbumArt'",
+				"order" : 5033,
+				"text" : "ui_$_spotify_art_fetch_local",
+				"type" : "text"
+			},
+			"$_spotify_art_fetch_local_note" : 
+			{
+				"condition" : "showDescriptions.value && (spotify.value && spotify_art.value) && spotify_art_type.value === 'AlbumArt'",
+				"order" : 5034,
+				"text" : "ui_$_spotify_art_fetch_local_note",
+				"type" : "text"
+			},
+			"$_spotify_token" : 
+			{
+				"condition" : "spotify.value && !spotify_backend_url.value",
+				"order" : 5003,
+				"text" : "ui_$_spotify_token",
+				"type" : "text"
+			},
+			"$_spotify_token_note" : 
+			{
+				"condition" : "(showDescriptions.value && showAdvancedOptions.value) && spotify.value && !spotify_backend_url.value",
+				"order" : 5004,
+				"text" : "ui_$_spotify_token_note",
+				"type" : "text"
+			},
+			"$_visualizer_color_responseDegree" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value) && visualizer_color_responseType.value !== 'None'",
+				"order" : 1059,
+				"text" : "ui_$_visualizer_color_responseDegree",
+				"type" : "text"
+			},
+			"$_visualizer_color_responseProvider" : 
+			{
+				"condition" : "(showAdvancedOptions.value && showDescriptions.value) && visualizer_color_responseType.value !== 'None'",
+				"order" : 1053,
+				"text" : "ui_$_visualizer_color_responseProvider",
+				"type" : "text"
+			},
+			"$_visualizer_color_responseRange" : 
+			{
+				"condition" : "showDescriptions.value && !['None','Hue'].includes(visualizer_color_responseType.value)",
+				"order" : 1057,
+				"text" : "ui_$_visualizer_color_responseRange",
+				"type" : "text"
+			},
+			"$_visualizer_color_responseType" : 
+			{
+				"condition" : "showDescriptions.value",
+				"order" : 1051,
+				"text" : "ui_$_visualizer_color_responseType",
+				"type" : "text"
+			},
+			"___audioSamples" : 
+			{
+				"order" : 999,
+				"text" : "&nbsp;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;",
+				"type" : "text"
+			},
+			"___clock" : 
+			{
+				"condition" : "clock.value",
+				"order" : 2999,
+				"text" : "&nbsp;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;",
+				"type" : "text"
+			},
+			"___spotify" : 
+			{
+				"condition" : "spotify.value",
+				"order" : 5999,
+				"text" : "&nbsp;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;",
+				"type" : "text"
+			},
+			"___visualizer" : 
+			{
+				"order" : 1999,
+				"text" : "&nbsp;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;&#9602;",
+				"type" : "text"
+			},
+			"audioSamples" : 
+			{
+				"order" : 100,
+				"text" : "ui_audioSamples",
+				"type" : "text"
+			},
+			"audioSamples_buffer" : 
+			{
+				"condition" : "showAdvancedOptions.value",
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 120,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_buffer",
+				"type" : "slider",
+				"value" : 0.40000000000000002
+			},
+			"audioSamples_correct" : 
+			{
+				"condition" : "showAdvancedOptions.value",
+				"order" : 102,
+				"text" : "ui_audioSamples_correct",
+				"type" : "bool",
+				"value" : true
+			},
+			"audioSamples_freqThreshold" : 
+			{
+				"editable" : false,
+				"fraction" : true,
+				"max" : 10,
+				"min" : 0,
+				"order" : 105,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_freqThreshold",
+				"type" : "slider",
+				"value" : 0.10000000000000001
+			},
+			"audioSamples_normalize" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_buffer.value > 0",
+				"order" : 122,
+				"text" : "ui_audioSamples_normalize",
+				"type" : "bool",
+				"value" : false
+			},
+			"audioSamples_scale" : 
+			{
+				"condition" : "showAdvancedOptions.value",
+				"options" : 
+				[
+					{
+						"label" : "ui_audioSamples_scale_Linear",
+						"value" : "Linear"
+					},
+					{
+						"label" : "ui_audioSamples_scale_Power",
+						"value" : "Power"
+					},
+					{
+						"label" : "ui_audioSamples_scale_Exponential",
+						"value" : "Exponential"
+					},
+					{
+						"label" : "ui_audioSamples_scale_Logarithm",
+						"value" : "Logarithm"
+					},
+					{
+						"label" : "ui_audioSamples_scale_Logarithm$Power",
+						"value" : "Logarithm$Power"
+					},
+					{
+						"label" : "ui_audioSamples_scale_Gaussian",
+						"value" : "Gaussian"
+					}
+				],
+				"order" : 110,
+				"text" : "ui_audioSamples_scale",
+				"type" : "combo",
+				"value" : "Logarithm"
+			},
+			"audioSamples_scale_Exponential_base" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Exponential'",
+				"fraction" : true,
+				"max" : 3,
+				"min" : 1.5,
+				"order" : 112,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Exponential_base",
+				"type" : "slider",
+				"value" : 2
+			},
+			"audioSamples_scale_Gaussian_deviation" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Gaussian'",
+				"editable" : true,
+				"fraction" : true,
+				"max" : 0.59999999999999998,
+				"min" : 0.01,
+				"order" : 112,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Gaussian_deviation",
+				"type" : "slider",
+				"value" : 0.42999999999999999
+			},
+			"audioSamples_scale_Gaussian_mean" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Gaussian'",
+				"editable" : true,
+				"fraction" : true,
+				"max" : 1.2,
+				"min" : 0,
+				"order" : 113,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Gaussian_mean",
+				"type" : "slider",
+				"value" : 0.92000000000000004
+			},
+			"audioSamples_scale_Logarithm$Power_a" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Logarithm$Power'",
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 112,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Logarithm$Power_a",
+				"type" : "slider",
+				"value" : 0.40000000000000002
+			},
+			"audioSamples_scale_Logarithm$Power_base" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Logarithm$Power'",
+				"fraction" : true,
+				"max" : 5,
+				"min" : 1.8,
+				"order" : 113,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Logarithm$Power_base",
+				"type" : "slider",
+				"value" : 3
+			},
+			"audioSamples_scale_Logarithm$Power_exponent" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Logarithm$Power'",
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0.20000000000000001,
+				"order" : 114,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Logarithm$Power_exponent",
+				"type" : "slider",
+				"value" : 1.8
+			},
+			"audioSamples_scale_Logarithm_base" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Logarithm'",
+				"fraction" : true,
+				"max" : 3,
+				"min" : 1.8,
+				"order" : 112,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Logarithm_base",
+				"type" : "slider",
+				"value" : 2
+			},
+			"audioSamples_scale_Power_exponent" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_scale.value == 'Power'",
+				"fraction" : true,
+				"max" : 4,
+				"min" : 0.20000000000000001,
+				"order" : 112,
+				"step" : 0.10000000000000001,
+				"text" : "ui_audioSamples_scale_Power_exponent",
+				"type" : "slider",
+				"value" : 2
+			},
+			"audioSamples_volumeGain" : 
+			{
+				"editable" : false,
+				"max" : 100,
+				"min" : -100,
+				"order" : 104,
+				"text" : "ui_audioSamples_volumeGain",
+				"type" : "slider",
+				"value" : 35
+			},
+			"background" : 
+			{
+				"order" : 50,
+				"text" : "ui_background",
+				"type" : "text"
+			},
+			"background_$_css" : 
+			{
+				"condition" : "showDescriptions.value && background_type.value === 'Css'",
+				"order" : 53,
+				"text" : "ui_background_$_css",
+				"type" : "text"
+			},
+			"background_color" : 
+			{
+				"condition" : "background_type.value === 'Color'",
+				"order" : 52,
+				"text" : "ui_background_color",
+				"type" : "color",
+				"value" : "0 0.007843 0.035294"
+			},
+			"background_css" : 
+			{
+				"condition" : "background_type.value === 'Css'",
+				"order" : 52,
+				"text" : "ui_background_css",
+				"type" : "textinput",
+				"value" : "background: radial-gradient(ellipse at center, #0d0f16 0%,#030611 60%,#000105 100%);"
+			},
+			"background_image" : 
+			{
+				"condition" : "background_type.value === 'Image'",
+				"order" : 52,
+				"text" : "ui_background_image",
+				"type" : "file"
+			},
+			"background_playlist" : 
+			{
+				"condition" : "background_type.value === 'Playlist'",
+				"mode" : "ondemand",
+				"order" : 52,
+				"text" : "ui_background_playlist",
+				"type" : "directory"
+			},
+			"background_playlistTimer" : 
+			{
+				"condition" : "background_type.value === 'Playlist'",
+				"editable" : false,
+				"fraction" : true,
+				"max" : 24,
+				"min" : 0.5,
+				"order" : 53,
+				"step" : 0.5,
+				"text" : "ui_background_playlistTimer",
+				"type" : "slider",
+				"value" : 1
+			},
+			"background_type" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Solid Color",
+						"value" : "Color"
+					},
+					{
+						"label" : "Image",
+						"value" : "Image"
+					},
+					{
+						"label" : "CSS",
+						"value" : "Css"
+					},
+					{
+						"label" : "Playlist",
+						"value" : "Playlist"
+					}
+				],
+				"order" : 51,
+				"text" : "ui_background_type",
+				"type" : "combo",
+				"value" : "Color"
+			},
+			"circularVisualizer" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Circular')",
+				"order" : 1100,
+				"text" : "ui_circularVisualizer",
+				"type" : "text"
+			},
+			"circularVisualizer_angle" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Circular')",
+				"editable" : false,
+				"max" : 360,
+				"min" : 90,
+				"order" : 1105,
+				"text" : "ui_circularVisualizer_angle",
+				"type" : "slider",
+				"value" : 360
+			},
+			"circularVisualizer_bars" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularBars'",
+				"order" : 1120,
+				"text" : "ui_circularVisualizer_bars",
+				"type" : "text"
+			},
+			"circularVisualizer_bars_height" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularBars'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 10,
+				"order" : 1122,
+				"text" : "ui_circularVisualizer_bars_height",
+				"type" : "slider",
+				"value" : 55
+			},
+			"circularVisualizer_bars_width" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularBars'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 1,
+				"order" : 1121,
+				"text" : "ui_circularVisualizer_bars_width",
+				"type" : "slider",
+				"value" : 60
+			},
+			"circularVisualizer_blocks" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularBlocks'",
+				"order" : 1120,
+				"text" : "ui_circularVisualizer_blocks",
+				"type" : "text"
+			},
+			"circularVisualizer_blocks_height" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularBlocks'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 10,
+				"order" : 1122,
+				"text" : "ui_circularVisualizer_blocks_height",
+				"type" : "slider",
+				"value" : 50
+			},
+			"circularVisualizer_blocks_thickness" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularBlocks'",
+				"editable" : false,
+				"max" : 10,
+				"min" : 1,
+				"order" : 1123,
+				"text" : "ui_circularVisualizer_blocks_thickness",
+				"type" : "slider",
+				"value" : 2
+			},
+			"circularVisualizer_blocks_width" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularBlocks'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 1,
+				"order" : 1121,
+				"text" : "ui_circularVisualizer_blocks_width",
+				"type" : "slider",
+				"value" : 100
+			},
+			"circularVisualizer_color" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Circular')",
+				"order" : 1106,
+				"text" : "ui_circularVisualizer_color",
+				"type" : "color",
+				"value" : "0.176470 0.266667 0.611764"
+			},
+			"circularVisualizer_radius" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Circular')",
+				"editable" : false,
+				"max" : 35,
+				"min" : 10,
+				"order" : 1103,
+				"text" : "ui_circularVisualizer_radius",
+				"type" : "slider",
+				"value" : 16
+			},
+			"circularVisualizer_rotation" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Circular')",
+				"editable" : false,
+				"max" : 360,
+				"min" : 0,
+				"order" : 1104,
+				"text" : "ui_circularVisualizer_rotation",
+				"type" : "slider",
+				"value" : 0
+			},
+			"circularVisualizer_wave" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularWave'",
+				"order" : 1120,
+				"text" : "ui_circularVisualizer_wave",
+				"type" : "text"
+			},
+			"circularVisualizer_wave_fill" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularWave' && circularVisualizer_wave_showMirrorWave.value",
+				"order" : 1123,
+				"text" : "ui_circularVisualizer_wave_fill",
+				"type" : "bool",
+				"value" : false
+			},
+			"circularVisualizer_wave_height" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularWave'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 10,
+				"order" : 1121,
+				"text" : "ui_circularVisualizer_wave_height",
+				"type" : "slider",
+				"value" : 30
+			},
+			"circularVisualizer_wave_showMirrorWave" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularWave'",
+				"order" : 1122,
+				"text" : "ui_circularVisualizer_wave_showMirrorWave",
+				"type" : "bool",
+				"value" : false
+			},
+			"circularVisualizer_wave_smoothness" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularWave'",
+				"editable" : false,
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 1125,
+				"step" : 0.10000000000000001,
+				"text" : "ui_circularVisualizer_wave_smoothness",
+				"type" : "slider",
+				"value" : 0
+			},
+			"circularVisualizer_wave_thickness" : 
+			{
+				"condition" : "visualizer_type.value === 'CircularWave' && !(circularVisualizer_wave_showMirrorWave.value && circularVisualizer_wave_fill.value)",
+				"editable" : false,
+				"max" : 5,
+				"min" : 1,
+				"order" : 1124,
+				"text" : "ui_circularVisualizer_wave_thickness",
+				"type" : "slider",
+				"value" : 1
+			},
+			"circularVisualizer_x" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Circular')",
+				"editable" : false,
+				"fraction" : true,
+				"max" : 100,
+				"min" : 0,
+				"order" : 1101,
+				"step" : 0.10000000000000001,
+				"text" : "ui_circularVisualizer_x",
+				"type" : "slider",
+				"value" : 50
+			},
+			"circularVisualizer_y" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Circular')",
+				"editable" : false,
+				"fraction" : true,
+				"max" : 100,
+				"min" : 0,
+				"order" : 1102,
+				"step" : 0.10000000000000001,
+				"text" : "ui_circularVisualizer_y",
+				"type" : "slider",
+				"value" : 50
+			},
+			"clock" : 
+			{
+				"order" : 2000,
+				"text" : "ui_clock",
+				"type" : "bool",
+				"value" : false
+			},
+			"clock_custom_css" : 
+			{
+				"condition" : "showAdvancedOptions.value && clock.value",
+				"order" : 2023,
+				"text" : "ui_clock_custom_css",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"clock_digital_24h" : 
+			{
+				"condition" : "clock.value && !clock_digital_locale.value",
+				"order" : 2031,
+				"text" : "ui_clock_digital_24h",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock_digital_font" : 
+			{
+				"condition" : "clock.value",
+				"options" : 
+				[
+					{
+						"label" : "Open Sans",
+						"value" : "OpenSans"
+					},
+					{
+						"label" : "Heebo",
+						"value" : "Heebo"
+					},
+					{
+						"label" : "Arapey",
+						"value" : "Arapey"
+					},
+					{
+						"label" : "<em>Local Font</em>",
+						"value" : "LocalFont"
+					}
+				],
+				"order" : 2020,
+				"text" : "ui_clock_digital_font",
+				"type" : "combo",
+				"value" : "OpenSans"
+			},
+			"clock_digital_fontsize" : 
+			{
+				"condition" : "clock.value",
+				"max" : 192,
+				"min" : 18,
+				"order" : 2021,
+				"text" : "ui_clock_digital_fontsize",
+				"type" : "slider",
+				"value" : 72
+			},
+			"clock_digital_locale" : 
+			{
+				"condition" : "showAdvancedOptions.value && clock.value",
+				"order" : 2032,
+				"text" : "ui_clock_digital_locale",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"clock_digital_text_color" : 
+			{
+				"condition" : "clock.value",
+				"order" : 2022,
+				"text" : "ui_clock_digital_text_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clock_pivot" : 
+			{
+				"condition" : "clock.value",
+				"options" : 
+				[
+					{
+						"label" : "Center",
+						"value" : "Center"
+					},
+					{
+						"label" : "Top",
+						"value" : "Top"
+					},
+					{
+						"label" : "Left",
+						"value" : "Left"
+					},
+					{
+						"label" : "Bottom",
+						"value" : "Bottom"
+					},
+					{
+						"label" : "Right",
+						"value" : "Right"
+					},
+					{
+						"label" : "Top Left",
+						"value" : "TopLeft"
+					},
+					{
+						"label" : "Bottom Left",
+						"value" : "BottomLeft"
+					},
+					{
+						"label" : "Bottom Right",
+						"value" : "BottomRight"
+					},
+					{
+						"label" : "Top Right",
+						"value" : "TopRight"
+					}
+				],
+				"order" : 2010,
+				"text" : "ui_clock_pivot",
+				"type" : "combo",
+				"value" : "Bottom"
+			},
+			"clock_position_x" : 
+			{
+				"condition" : "clock.value",
+				"fraction" : true,
+				"max" : 100,
+				"min" : 0,
+				"order" : 2011,
+				"step" : 0.10000000000000001,
+				"text" : "ui_clock_position_x",
+				"type" : "slider",
+				"value" : 50
+			},
+			"clock_position_y" : 
+			{
+				"condition" : "clock.value",
+				"fraction" : true,
+				"max" : 100,
+				"min" : 0,
+				"order" : 2012,
+				"step" : 0.10000000000000001,
+				"text" : "ui_clock_position_y",
+				"type" : "slider",
+				"value" : 96
+			},
+			"clock_seconds" : 
+			{
+				"condition" : "clock.value",
+				"order" : 2030,
+				"text" : "ui_clock_seconds",
+				"type" : "bool",
+				"value" : false
+			},
+			"icue" : 
+			{
+				"order" : 6000,
+				"text" : "ui_icue",
+				"type" : "bool",
+				"value" : true
+			},
+			"icue_boost" : 
+			{
+				"condition" : "icue.value",
+				"fraction" : true,
+				"max" : 10,
+				"min" : 0.10000000000000001,
+				"order" : 6001,
+				"step" : 0.10000000000000001,
+				"text" : "ui_icue_boost",
+				"type" : "slider",
+				"value" : 6
+			},
+			"icue_spectrum_start" : 
+			{
+				"condition" : "icue.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 6002,
+				"text" : "ui_icue_spectrum_start",
+				"type" : "slider",
+				"value" : 0
+			},
+			"icue_spectrum_width" : 
+			{
+				"condition" : "icue.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 6004,
+				"text" : "ui_icue_spectrum_width",
+				"type" : "slider",
+				"value" : 100
+			},
+			"limitFps" : 
+			{
+				"condition" : "showAdvancedOptions.value",
+				"order" : 4,
+				"text" : "ui_limitFps",
+				"type" : "bool",
+				"value" : true
+			},
+			"note1" : 
+			{
+				"condition" : "showAdvancedOptions.value",
+				"order" : 9001,
+				"text" : "ui_note1",
+				"type" : "text"
+			},
+			"note2" : 
+			{
+				"order" : 9002,
+				"text" : "ui_note2",
+				"type" : "text"
+			},
+			"notes" : 
+			{
+				"order" : 9000,
+				"text" : "ui_notes",
+				"type" : "text"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"showAdvancedOptions" : 
+			{
+				"order" : 2,
+				"text" : "ui_showAdvancedOptions",
+				"type" : "bool",
+				"value" : false
+			},
+			"showDescriptions" : 
+			{
+				"order" : 1,
+				"text" : "ui_showDescriptions",
+				"type" : "bool",
+				"value" : false
+			},
+			"showStats" : 
+			{
+				"condition" : "showAdvancedOptions.value",
+				"order" : 3,
+				"text" : "ui_showStats",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotify" : 
+			{
+				"order" : 5000,
+				"text" : "ui_spotify",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotify_art" : 
+			{
+				"condition" : "spotify.value",
+				"order" : 5030,
+				"text" : "ui_spotify_art",
+				"type" : "bool",
+				"value" : true
+			},
+			"spotify_art_fetch_local" : 
+			{
+				"condition" : "(spotify.value && spotify_art.value) && spotify_art_type.value === 'AlbumArt'",
+				"order" : 5032,
+				"text" : "ui_spotify_art_fetch_local",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotify_art_fetch_local_cache_age" : 
+			{
+				"condition" : "showAdvancedOptions.value && (spotify.value && spotify_art.value) && spotify_art_type.value === 'AlbumArt' && spotify_art_fetch_local.value",
+				"max" : 28,
+				"min" : 1,
+				"order" : 5035,
+				"text" : "ui_spotify_art_fetch_local_cache_age",
+				"type" : "slider",
+				"value" : 5
+			},
+			"spotify_art_type" : 
+			{
+				"condition" : "spotify.value && spotify_art.value",
+				"options" : 
+				[
+					{
+						"label" : "Album Art",
+						"value" : "AlbumArt"
+					},
+					{
+						"label" : "Spotify Icon",
+						"value" : "SpotifyIcon"
+					}
+				],
+				"order" : 5031,
+				"text" : "ui_spotify_art_type",
+				"type" : "combo",
+				"value" : "SpotifyIcon"
+			},
+			"spotify_backend_url" : 
+			{
+				"condition" : "showAdvancedOptions.value && spotify.value",
+				"order" : 5001,
+				"text" : "ui_spotify_backend_url",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotify_background" : 
+			{
+				"condition" : "spotify.value",
+				"order" : 5020,
+				"text" : "ui_spotify_background",
+				"type" : "text"
+			},
+			"spotify_background_color" : 
+			{
+				"condition" : "spotify.value && spotify_background_type.value === 'Color'",
+				"order" : 5022,
+				"text" : "ui_spotify_background_color",
+				"type" : "color",
+				"value" : "0.023529 0.274510 0.196078"
+			},
+			"spotify_background_color_alpha" : 
+			{
+				"condition" : "spotify.value && spotify_background_type.value === 'Color'",
+				"max" : 100,
+				"min" : 0,
+				"order" : 5023,
+				"text" : "ui_spotify_background_color_alpha",
+				"type" : "slider",
+				"value" : 60
+			},
+			"spotify_background_css" : 
+			{
+				"condition" : "spotify.value && spotify_background_type.value === 'Css'",
+				"order" : 5022,
+				"text" : "ui_spotify_background_css",
+				"type" : "textinput",
+				"value" : "background: linear-gradient(180deg, #011911 0%,#053f2d 22%,#074f38 50%,#074f38 50%,#053f2d 78%,#011911 100%);"
+			},
+			"spotify_background_type" : 
+			{
+				"condition" : "spotify.value",
+				"options" : 
+				[
+					{
+						"label" : "Solid Color",
+						"value" : "Color"
+					},
+					{
+						"label" : "CSS",
+						"value" : "Css"
+					}
+				],
+				"order" : 5021,
+				"text" : "ui_spotify_background_type",
+				"type" : "combo",
+				"value" : "Color"
+			},
+			"spotify_font_size" : 
+			{
+				"condition" : "spotify.value",
+				"max" : 60,
+				"min" : 14,
+				"order" : 5014,
+				"text" : "ui_spotify_font_size",
+				"type" : "slider",
+				"value" : 18
+			},
+			"spotify_pivot" : 
+			{
+				"condition" : "spotify.value",
+				"options" : 
+				[
+					{
+						"label" : "Center",
+						"value" : "Center"
+					},
+					{
+						"label" : "Top",
+						"value" : "Top"
+					},
+					{
+						"label" : "Left",
+						"value" : "Left"
+					},
+					{
+						"label" : "Bottom",
+						"value" : "Bottom"
+					},
+					{
+						"label" : "Right",
+						"value" : "Right"
+					},
+					{
+						"label" : "Top Left",
+						"value" : "TopLeft"
+					},
+					{
+						"label" : "Bottom Left",
+						"value" : "BottomLeft"
+					},
+					{
+						"label" : "Bottom Right",
+						"value" : "BottomRight"
+					},
+					{
+						"label" : "Top Right",
+						"value" : "TopRight"
+					}
+				],
+				"order" : 5010,
+				"text" : "ui_spotify_pivot",
+				"type" : "combo",
+				"value" : "BottomRight"
+			},
+			"spotify_position_x" : 
+			{
+				"condition" : "spotify.value",
+				"fraction" : true,
+				"max" : 100,
+				"min" : 0,
+				"order" : 5011,
+				"step" : 0.10000000000000001,
+				"text" : "ui_spotify_position_x",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spotify_position_y" : 
+			{
+				"condition" : "spotify.value",
+				"fraction" : true,
+				"max" : 100,
+				"min" : 0,
+				"order" : 5012,
+				"step" : 0.10000000000000001,
+				"text" : "ui_spotify_position_y",
+				"type" : "slider",
+				"value" : 96
+			},
+			"spotify_progressbar" : 
+			{
+				"condition" : "spotify.value",
+				"order" : 5100,
+				"text" : "ui_spotify_progressbar",
+				"type" : "bool",
+				"value" : false
+			},
+			"spotify_progressbar_color" : 
+			{
+				"condition" : "spotify.value && spotify_progressbar.value",
+				"order" : 5102,
+				"text" : "ui_spotify_progressbar_color",
+				"type" : "color",
+				"value" : "0.639215 0.749019 0.698039"
+			},
+			"spotify_progressbar_position" : 
+			{
+				"condition" : "spotify.value && spotify_progressbar.value",
+				"options" : 
+				[
+					{
+						"label" : "Top",
+						"value" : "Top"
+					},
+					{
+						"label" : "Bottom",
+						"value" : "Bottom"
+					}
+				],
+				"order" : 5101,
+				"text" : "ui_spotify_progressbar_position",
+				"type" : "combo",
+				"value" : "Bottom"
+			},
+			"spotify_scroll" : 
+			{
+				"condition" : "spotify.value",
+				"order" : 5040,
+				"text" : "ui_spotify_scroll",
+				"type" : "bool",
+				"value" : true
+			},
+			"spotify_scroll_auto_delay" : 
+			{
+				"condition" : "(spotify.value && spotify_scroll.value) && spotify_scroll_type.value === 'Automatic'",
+				"fraction" : true,
+				"max" : 10,
+				"min" : 2,
+				"order" : 5043,
+				"step" : 0.10000000000000001,
+				"text" : "ui_spotify_scroll_auto_delay",
+				"type" : "slider",
+				"value" : 3
+			},
+			"spotify_scroll_speed" : 
+			{
+				"condition" : "spotify.value && spotify_scroll.value",
+				"max" : 75,
+				"min" : 15,
+				"order" : 5042,
+				"text" : "ui_spotify_scroll_speed",
+				"type" : "slider",
+				"value" : 30
+			},
+			"spotify_scroll_type" : 
+			{
+				"condition" : "spotify.value && spotify_scroll.value",
+				"options" : 
+				[
+					{
+						"label" : "Automatic",
+						"value" : "Automatic"
+					},
+					{
+						"label" : "On Mouse Over",
+						"value" : "OnMouseOver"
+					}
+				],
+				"order" : 5041,
+				"text" : "ui_spotify_scroll_type",
+				"type" : "combo",
+				"value" : "OnMouseOver"
+			},
+			"spotify_text_color" : 
+			{
+				"condition" : "spotify.value",
+				"order" : 5015,
+				"text" : "ui_spotify_text_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"spotify_token" : 
+			{
+				"condition" : "spotify.value",
+				"order" : 5002,
+				"text" : "ui_spotify_token",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"spotify_width" : 
+			{
+				"condition" : "spotify.value",
+				"max" : 500,
+				"min" : 200,
+				"order" : 5013,
+				"text" : "ui_spotify_width",
+				"type" : "slider",
+				"value" : 255
+			},
+			"verticalVisualizer" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Vertical')",
+				"order" : 1100,
+				"text" : "ui_verticalVisualizer",
+				"type" : "text"
+			},
+			"verticalVisualizer_alignment" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Vertical')",
+				"editable" : false,
+				"fraction" : true,
+				"max" : 1,
+				"min" : -1,
+				"order" : 1103,
+				"step" : 0.01,
+				"text" : "ui_verticalVisualizer_alignment",
+				"type" : "slider",
+				"value" : 0
+			},
+			"verticalVisualizer_bars" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBars'",
+				"order" : 1120,
+				"text" : "ui_verticalVisualizer_bars",
+				"type" : "text"
+			},
+			"verticalVisualizer_bars_borderRadius" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBars'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 0,
+				"order" : 1123,
+				"text" : "ui_verticalVisualizer_bars_borderRadius",
+				"type" : "slider",
+				"value" : 0
+			},
+			"verticalVisualizer_bars_height" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBars'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 10,
+				"order" : 1122,
+				"text" : "ui_verticalVisualizer_bars_height",
+				"type" : "slider",
+				"value" : 45
+			},
+			"verticalVisualizer_bars_width" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBars'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 1,
+				"order" : 1121,
+				"text" : "ui_verticalVisualizer_bars_width",
+				"type" : "slider",
+				"value" : 38
+			},
+			"verticalVisualizer_blocks" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBlocks'",
+				"order" : 1120,
+				"text" : "ui_verticalVisualizer_blocks",
+				"type" : "text"
+			},
+			"verticalVisualizer_blocks_height" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBlocks'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 10,
+				"order" : 1122,
+				"text" : "ui_verticalVisualizer_blocks_height",
+				"type" : "slider",
+				"value" : 32
+			},
+			"verticalVisualizer_blocks_thickness" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBlocks'",
+				"editable" : false,
+				"max" : 10,
+				"min" : 1,
+				"order" : 1123,
+				"text" : "ui_verticalVisualizer_blocks_thickness",
+				"type" : "slider",
+				"value" : 2
+			},
+			"verticalVisualizer_blocks_width" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalBlocks'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 1,
+				"order" : 1121,
+				"text" : "ui_verticalVisualizer_blocks_width",
+				"type" : "slider",
+				"value" : 85
+			},
+			"verticalVisualizer_color" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Vertical')",
+				"order" : 1104,
+				"text" : "ui_verticalVisualizer_color",
+				"type" : "color",
+				"value" : "0.176470 0.266667 0.611764"
+			},
+			"verticalVisualizer_position" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Vertical')",
+				"editable" : false,
+				"fraction" : true,
+				"max" : 100,
+				"min" : 0,
+				"order" : 1101,
+				"step" : 0.10000000000000001,
+				"text" : "ui_verticalVisualizer_position",
+				"type" : "slider",
+				"value" : 50
+			},
+			"verticalVisualizer_wave" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalWave'",
+				"order" : 1120,
+				"text" : "ui_verticalVisualizer_wave",
+				"type" : "text"
+			},
+			"verticalVisualizer_wave_fill" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalWave' && verticalVisualizer_wave_showMirrorWave.value",
+				"order" : 1123,
+				"text" : "ui_verticalVisualizer_wave_fill",
+				"type" : "bool",
+				"value" : false
+			},
+			"verticalVisualizer_wave_height" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalWave'",
+				"editable" : false,
+				"max" : 100,
+				"min" : 10,
+				"order" : 1121,
+				"text" : "ui_verticalVisualizer_wave_height",
+				"type" : "slider",
+				"value" : 30
+			},
+			"verticalVisualizer_wave_showMirrorWave" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalWave'",
+				"order" : 1122,
+				"text" : "ui_verticalVisualizer_wave_showMirrorWave",
+				"type" : "bool",
+				"value" : true
+			},
+			"verticalVisualizer_wave_smoothness" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalWave'",
+				"editable" : false,
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 1125,
+				"step" : 0.10000000000000001,
+				"text" : "ui_verticalVisualizer_wave_smoothness",
+				"type" : "slider",
+				"value" : 0
+			},
+			"verticalVisualizer_wave_thickness" : 
+			{
+				"condition" : "visualizer_type.value === 'VerticalWave' && !(verticalVisualizer_wave_showMirrorWave.value && verticalVisualizer_wave_fill.value)",
+				"editable" : false,
+				"max" : 5,
+				"min" : 1,
+				"order" : 1124,
+				"text" : "ui_verticalVisualizer_wave_thickness",
+				"type" : "slider",
+				"value" : 1
+			},
+			"verticalVisualizer_width" : 
+			{
+				"condition" : "visualizer_type.value.startsWith('Vertical')",
+				"editable" : false,
+				"max" : 100,
+				"min" : 25,
+				"order" : 1102,
+				"text" : "ui_verticalVisualizer_width",
+				"type" : "slider",
+				"value" : 45
+			},
+			"visualizer" : 
+			{
+				"order" : 1000,
+				"text" : "ui_visualizer",
+				"type" : "text"
+			},
+			"visualizer_color_responseDegree" : 
+			{
+				"condition" : "showAdvancedOptions.value && visualizer_color_responseType.value !== 'None'",
+				"fraction" : true,
+				"max" : 3,
+				"min" : 0.10000000000000001,
+				"order" : 1058,
+				"step" : 0.10000000000000001,
+				"text" : "ui_visualizer_color_responseDegree",
+				"type" : "slider",
+				"value" : 0.80000000000000004
+			},
+			"visualizer_color_responseProvider" : 
+			{
+				"condition" : "showAdvancedOptions.value && visualizer_color_responseType.value !== 'None'",
+				"options" : 
+				[
+					{
+						"label" : "Value",
+						"value" : "Value"
+					},
+					{
+						"label" : "Value (normalized)",
+						"value" : "ValueNormalized"
+					},
+					{
+						"label" : "Change",
+						"value" : "Change"
+					},
+					{
+						"label" : "Change (absolute)",
+						"value" : "ChangeAbsolute"
+					}
+				],
+				"order" : 1052,
+				"text" : "ui_visualizer_color_responseProvider",
+				"type" : "combo",
+				"value" : "ValueNormalized"
+			},
+			"visualizer_color_responseRange" : 
+			{
+				"condition" : "!['None','Hue'].includes(visualizer_color_responseType.value)",
+				"max" : 50,
+				"min" : -50,
+				"order" : 1056,
+				"text" : "ui_visualizer_color_responseRange",
+				"type" : "slider",
+				"value" : 35
+			},
+			"visualizer_color_responseType" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "None",
+						"value" : "None"
+					},
+					{
+						"label" : "<samp><u>H</u>S*</samp> - Hue",
+						"value" : "Hue"
+					},
+					{
+						"label" : "<samp>H<u>S</u>V</samp> - Saturation",
+						"value" : "Saturation"
+					},
+					{
+						"label" : "<samp>HS<u>V</u></samp> - Brightness",
+						"value" : "HsvBrightness"
+					},
+					{
+						"label" : "<samp>HS<u>L</u></samp> - Lightness",
+						"value" : "HslLightness"
+					},
+					{
+						"label" : "<samp><u>L</u>AB</samp> - Lightness",
+						"value" : "LabLightness"
+					},
+					{
+						"label" : "<samp>L<u>A</u>B</samp> - Green&#8596;Red",
+						"value" : "LabA"
+					},
+					{
+						"label" : "<samp>LA<u>B</u></samp> - Blue&#8596;Yellow",
+						"value" : "LabB"
+					}
+				],
+				"order" : 1050,
+				"text" : "ui_visualizer_color_responseType",
+				"type" : "combo",
+				"value" : "HsvBrightness"
+			},
+			"visualizer_color_responseValueGain" : 
+			{
+				"condition" : "showAdvancedOptions.value && visualizer_color_responseType.value !== 'None'",
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0.10000000000000001,
+				"order" : 1054,
+				"step" : 0.10000000000000001,
+				"text" : "ui_visualizer_color_responseValueGain",
+				"type" : "slider",
+				"value" : 1
+			},
+			"visualizer_color_response_toHue" : 
+			{
+				"condition" : "visualizer_color_responseType.value === 'Hue'",
+				"order" : 1060,
+				"text" : "ui_visualizer_color_response_toHue",
+				"type" : "color",
+				"value" : "0.4 0.839 0.8"
+			},
+			"visualizer_flipFrequencies" : 
+			{
+				"order" : 1002,
+				"text" : "ui_visualizer_flipFrequencies",
+				"type" : "bool",
+				"value" : false
+			},
+			"visualizer_smoothing" : 
+			{
+				"condition" : "showAdvancedOptions.value && audioSamples_buffer.value > 0",
+				"max" : 100,
+				"min" : 0,
+				"order" : 1003,
+				"text" : "ui_visualizer_smoothing",
+				"type" : "slider",
+				"value" : 38
+			},
+			"visualizer_type" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Vertical, Bars",
+						"value" : "VerticalBars"
+					},
+					{
+						"label" : "Vertical, Blocks",
+						"value" : "VerticalBlocks"
+					},
+					{
+						"label" : "Vertical, Wave",
+						"value" : "VerticalWave"
+					},
+					{
+						"label" : "Circular, Bars",
+						"value" : "CircularBars"
+					},
+					{
+						"label" : "Circular, Blocks",
+						"value" : "CircularBlocks"
+					},
+					{
+						"label" : "Circular, Wave",
+						"value" : "CircularWave"
+					}
+				],
+				"order" : 1001,
+				"text" : "ui_visualizer_type",
+				"type" : "combo",
+				"value" : "VerticalBars"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Abstract" ],
+	"title" : "Customizable Audio Visualizer",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : "2071366191"
+}

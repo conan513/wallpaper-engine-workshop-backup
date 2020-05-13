@@ -1,0 +1,22 @@
+{
+	"description" : "By Yasonich.\n\nNot my video. I just uploaded it on workshop\nLink on original post:\nhttp://pikabu.ru/story/animirovannyie_oboi_dlya_rabochego_stola_orda_wow_4385408",
+	"file" : "horde_1980.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "World of Warcraft Horde (1080p)",
+	"type" : "video",
+	"visibility" : "public"
+}

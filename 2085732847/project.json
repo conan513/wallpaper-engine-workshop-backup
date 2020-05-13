@@ -1,0 +1,63 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "[b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1727210908]\u22c6 Check my all approved wallpapers here! \u22c6[/url][/b]\n\nPlease make sure to follow artist below for more amazing works!\n\u274a Support author: https://www.artstation.com/krunkid\n\n\u266a Neverwinter Nights - Heart of the Forest \n\n\u2022 Please contact me only via [url=https://steamcommunity.com/id/historykhistoria]Steam.[/url]\n\n[img]https://i.imgur.com/p7Fv1Z6.gif[/img]",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"arms_movement" : 
+			{
+				"order" : 100,
+				"text" : "Arms Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"boat_movement" : 
+			{
+				"order" : 102,
+				"text" : "Boat Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"body_movement" : 
+			{
+				"order" : 101,
+				"text" : "Body Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"pulse_effect" : 
+			{
+				"order" : 104,
+				"text" : "Pulse Effect",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.827 0.714 0.490"
+			},
+			"strength_of_boat_movement" : 
+			{
+				"fraction" : true,
+				"max" : 0.080000000000000002,
+				"min" : 0,
+				"order" : 103,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Strength of boat Movement",
+				"type" : "slider",
+				"value" : 0.080000000000000002
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Fantasy" ],
+	"title" : "Lily River by George Marnero @ 4K",
+	"type" : "scene",
+	"version" : 0
+}

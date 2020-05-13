@@ -1,0 +1,1069 @@
+{
+	"approved" : true,
+	"description" : "First trail ..........\r\n\r\nAll suggestions and feedback's are welcome\r\n\r\nResolution independent!\r\n\r\nAudio responsive, Space zoom!!!!\r\n\r\nFully customizable TimeStamp, Colors, Sizes, Arcs, Effects.\r\n\r\n",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"normalize":
+			{
+				"order" : 5,
+				"text" : "Normalize Audio",
+				"type" : "bool",
+				"value" : true
+			},
+			"noise":
+			{
+				"order" : 10,
+				"text" : "Noise",
+				"type" : "bool",
+				"value" : true
+			},
+			"reverseright":
+			{
+				"order" : 15,
+				"text" : "Reverse Right bars",
+				"type" : "bool",
+				"value" : false
+			},
+			"resposive":
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 20,
+				"text" : "Responsiveness",
+				"type" : "slider",
+				"value" : 33
+			},
+			"background" : 
+			{
+				"order" : 25,
+				"text" : "<h4>Background</h4>",
+				"type" : "text"
+			},
+			"backgroundsource" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Color",
+						"value" : 1
+					},
+					{
+						"label" : "Image",
+						"value" : 2
+					},
+					{
+						"label" : "ImageSlideShow",
+						"value" : 3
+					},
+					{
+						"label" : "Video",
+						"value" : 4
+					}
+				],
+				"order" : 30,
+				"text" : "BackgroundType",
+				"type" : "combo",
+				"value" : 1
+			},
+			"backgroundcolor" : 
+			{
+				"condition" : "backgroundsource.value == 1",
+				"order" : 35,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"backgroundimage" : 
+			{
+				"condition" : "backgroundsource.value == 2",
+				"order" : 40,
+				"text" : "Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"customrandomdirectory" : 
+			{
+				"condition" : "backgroundsource.value == 3",
+				"mode" : "ondemand",
+				"order" : 45,
+				"text" : "Image Folder",
+				"type" : "directory"
+			},
+			"slideshowInterval" : 
+			{
+				"condition" : "backgroundsource.value == 3",
+				"max" : 120,
+				"min" : 1,
+				"order" : 50,
+				"text" : "Image Interval",
+				"type" : "slider",
+				"value" : 10
+			},
+			"slideshowIntervalMultiplier" : 
+			{
+				"condition" : "backgroundsource.value == 3",
+				"options" : 
+				[
+					{
+						"label" : "seconds",
+						"value" : 1
+					},
+					{
+						"label" : "minutes",
+						"value" : 60
+					},
+					{
+						"label" : "hour",
+						"value" : 3600
+					}
+				],
+				"order" : 55,
+				"text" : "Image Interval Units",
+				"type" : "combo",
+				"value" : 1
+			},
+			"imageoptions" : 
+			{
+				"condition" : "backgroundsource.value == 2 || backgroundsource.value == 3",
+				"options" : 
+				[
+					{
+						"label" : "Initial",
+						"value" : 1
+					},
+					{
+						"label" : "Cover",
+						"value" : 2
+					},
+					{
+						"label" : "Contain",
+						"value" : 3
+					}
+				],
+				"order" : 60,
+				"text" : "Image options",
+				"type" : "combo",
+				"value" : 2
+			},
+			"backgroundvideonumber" : 
+			{
+				"condition" : "backgroundsource.value == 4",
+				"options" : 
+				[
+					{
+						"label" : "UserDefined1",
+						"value" : 1
+					},
+					{
+						"label" : "UserDefined2",
+						"value" : 2
+					},
+					{
+						"label" : "UserDefined3",
+						"value" : 3
+					},
+					{
+						"label" : "UserDefined4",
+						"value" : 4
+					},
+					{
+						"label" : "UseDefined5",
+						"value" : 5
+					}
+				],
+				"order" : 65,
+				"text" : "Video Source",
+				"type" : "combo",
+				"value" : 1
+			},
+			"clock" : 
+			{
+				"order" : 70,
+				"text" : "<h4>Clock/Text</h4>",
+				"type" : "text"
+			},
+			"showclock" : 
+			{
+				"order" : 75,
+				"text" : "Show clock",
+				"type" : "bool",
+				"value" : false
+			},
+			"bassshakeclock" : 
+			{
+				"condition" : "showclock.value",
+				"order" : 76,
+				"text" : "BassShake Clock",
+				"type" : "bool",
+				"value" : false
+			},
+			"hrmode" : 
+			{
+				"condition" : "showclock.value",
+				"order" : 80,
+				"text" : "12 Hr Mode",
+				"type" : "bool",
+				"value" : false
+			},
+			"userhrposx":
+			{
+				"condition" : "showclock.value && hrmode.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 85,
+				"text" : "am/pm PositionX",
+				"type" : "slider",
+				"value" : 0
+			},
+			"userhrposy":
+			{
+				"condition" : "showclock.value && hrmode.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 90,
+				"text" : "am/pm PositionY",
+				"type" : "slider",
+				"value" : 0
+			},
+			"showsecs" : 
+			{
+				"condition" : "showclock.value",
+				"order" : 100,
+				"text" : "Show seconds",
+				"type" : "bool",
+				"value" : false
+			},
+			"showday":
+			{
+				"condition" : "showclock.value",
+				"order" : 105,
+				"text" : "Show Day",
+				"type" : "bool",
+				"value" : false
+			},
+			"texttype" : 
+			{
+				"condition" : "showclock.value && showday.value",
+				"options" : 
+				[
+					{
+						"label" : "Normal",
+						"value" : 1
+					},
+					{
+						"label" : "Short Hand",
+						"value" : 2
+					},
+					{
+						"label" : "UserDefined",
+						"value" : 3
+					}
+				],
+				"order" : 110,
+				"text" : "ShortHand day's",
+				"type" : "combo",
+				"value" : 1
+			},
+			"userdayposx" : 
+			{
+				"condition" : "showclock.value && showday.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 115,
+				"text" : "Day text PositionX",
+				"type" : "slider",
+				"value" : 0
+			},
+			"userdayposy" : 
+			{
+				"condition" : "showclock.value && showday.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 120,
+				"text" : "Day text PositionY",
+				"type" : "slider",
+				"value" : 0
+			},
+			"removecolon" :
+			{
+				"condition" : "showclock.value",
+				"order" : 125,
+				"text" : "Remove Colon Seperator",
+				"type" : "bool",
+				"value" : false
+			},
+			"clockfont":
+			{
+				"condition" : "showclock.value",
+				"max" : 20,
+				"min" : 1,
+				"order" : 130,
+				"text" : "Font",
+				"type" : "slider",
+				"value" : 1
+			},
+			"clocksize" : 
+			{
+				"condition" : "showclock.value",
+				"max" : 500,
+				"min" : 1,
+				"order" : 135,
+				"text" : "Font Size",
+				"type" : "slider",
+				"value" : 20
+			},
+			"clockcolor" : 
+			{
+				"condition" : "showclock.value",
+				"order" : 140,
+				"text" : "Text Color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"clockopacity" : 
+			{
+				"condition" : "showclock.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 145,
+				"text" : "Opacity%",
+				"type" : "slider",
+				"value" : 100
+			},
+			"blurclkvalue" : 
+			{
+				"condition" : "showclock.value",
+				"max" : 20,
+				"min" : 0,
+				"order" : 150,
+				"text" : "ShadowBlur",
+				"type" : "slider",
+				"value" : 0
+			},
+			"clockpositionx1" : 
+			{
+				"condition" : "showclock.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 155,
+				"text" : "Clock Position X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"clockpositiony1" : 
+			{
+				"condition" : "showclock.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 160,
+				"text" : "Clock Position Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"showtext" : 
+			{
+				"order" : 165,
+				"text" : "Show Text",
+				"type" : "bool",
+				"value" : false
+			},
+			"bassshaketext" : 
+			{
+				"condition" : "showtext.value",
+				"order" : 166,
+				"text" : "BassShake Text",
+				"type" : "bool",
+				"value" : false
+			},
+			"textfont":
+			{
+				"condition" : "showtext.value",
+				"max" : 20,
+				"min" : 1,
+				"order" : 170,
+				"text" : "Front",
+				"type" : "slider",
+				"value" : 1
+			},
+			"textsize" : 
+			{
+				"condition" : "showtext.value",
+				"max" : 500,
+				"min" : 1,
+				"order" : 175,
+				"text" : "Font Size",
+				"type" : "slider",
+				"value" : 25
+			},
+			"textcolor" : 
+			{
+				"condition" : "showtext.value",
+				"order" : 180,
+				"text" : "Text Color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"textopacity" : 
+			{
+				"condition" : "showtext.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 185,
+				"text" : "Opacity%",
+				"type" : "slider",
+				"value" : 100
+			},
+			"blurtxtvalue" : 
+			{
+				"condition" : "showtext.value",
+				"max" : 20,
+				"min" : 0,
+				"order" : 190,
+				"text" : "ShadowBlur",
+				"type" : "slider",
+				"value" : 0
+			},
+			"textpositionx":
+			{
+				"condition" : "showtext.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 200,
+				"text" : "Text Position Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"textpositiony":
+			{
+				"condition" : "showtext.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 205,
+				"text" : "Text Position X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"circle1" : 
+			{
+				"order" : 210,
+				"text" : "<h4>Circle</h4>",
+				"type" : "text"
+			},
+			"logoimage" :
+			{
+				"order" : 215,
+				"text" : "Logo[square]",
+				"type" : "file",
+				"value" : ""
+			},
+			"autologorotate" : 
+			{
+				"condition" : "logoimage.value",
+				"order" : 220,
+				"text" : "Auto Logo Rotate",
+				"type" : "bool",
+				"value" : false
+			},
+			"autologorotatespeed" :
+			{
+				"condition" : "autologorotate.value",
+				"max" : 20,
+				"min" : -20,
+				"order" : 225,
+				"text" : "Rotation Speed",
+				"type" : "slider",
+				"value" : 0
+			},
+			"circlecolor" : 
+			{
+				"condition" : "logoimage.value == false",
+				"order" : 230,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"circleopacity" : 
+			{
+				"condition" : "logoimage.value==false",
+				"max" : 100,
+				"min" : 0,
+				"order" : 235,
+				"text" : "Opacity%",
+				"type" : "slider",
+				"value" : 100
+			},
+			"circleradius" : 
+			{
+				"max" : 500,
+				"min" : 0,
+				"order" : 240,
+				"text" : "Radius",
+				"type" : "slider",
+				"value" : 64
+			},
+			"circlearc" : 
+			{
+				"max" : 360,
+				"min" : 0,
+				"order" : 245,
+				"text" : "Circle Arc",
+				"type" : "slider",
+				"value" : 360
+			},
+			"circlerotate" : 
+			{
+				"max" : 360,
+				"min" : 0,
+				"order" : 250,
+				"text" : "Circle rotate degrees",
+				"type" : "slider",
+				"value" : 0
+			},
+			"circle" : 
+			{
+				"order" : 255,
+				"text" : "<h4>Circle2</h4>",
+				"type" : "text"
+			},
+			"secondcircle" : 
+			{
+				"order" : 260,
+				"text" : "Second Cirlce",
+				"type" : "bool",
+				"value" : true
+			},
+			"secondcirclecolor" : 
+			{
+				"condition" : "secondcircle.value",
+				"order" : 265,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"secondcircleopacity" : 
+			{
+				"condition" : "secondcircle.value",
+				"max" : 100,
+				"min" : 0,
+				"order" : 270,
+				"text" : "Opacity%",
+				"type" : "slider",
+				"value" : 60
+			},
+			"secondcircleradius" : 
+			{
+				"condition" : "secondcircle.value",
+				"max" : 153,
+				"min" : 0,
+				"order" : 275,
+				"text" : "Radius",
+				"type" : "slider",
+				"value" : 24
+			},
+			"center" : 
+			{
+				"order" : 280,
+				"text" : "<h4>Position</h4>",
+				"type" : "text"
+			},
+			"eqpositionx" : 
+			{
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 290,
+				"text" : "Position X",
+				"type" : "slider",
+				"value" : 0
+			},
+			"eqpositiony" : 
+			{
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 300,
+				"text" : "Position Y",
+				"type" : "slider",
+				"value" : 0
+			},
+			"barandcircledistance" : 
+			{
+				"order" : 305,
+				"text" : "<h4>Gap between Circle and Bars</h4>",
+				"type" : "text"
+			},
+			"barcircledistance" : 
+			{
+				"max" : 500,
+				"min" : 0,
+				"order" : 310,
+				"text" : "Gap between Circle and Bars",
+				"type" : "slider",
+				"value" : 16
+			},
+			"bars" : 
+			{
+				"order" : 315,
+				"text" : "<h4>Bars</h4>",
+				"type" : "text"
+			},
+			"blurvalue" : 
+			{
+				"max" : 20,
+				"min" : 0,
+				"order" : 320,
+				"text" : "ShadowBlur",
+				"type" : "slider",
+				"value" : 0
+			},
+			"barcolortype" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Normal",
+						"value" : 1
+					},
+					{
+						"label" : "Rainbow",
+						"value" : 2
+					},
+					{
+						"label" : "Style1",
+						"value" : 3
+					},
+					{
+						"label" : "Style2",
+						"value" : 4
+					}
+				],
+				"order" : 325,
+				"text" : "Bar Color Type",
+				"type" : "combo",
+				"value" : 1
+			},
+			"beattolerance" : 
+			{
+				"condition" : "barcolortype.value == 3 || barcolortype.value == 4",
+				"max" : 50,
+				"min" : -50,
+				"order" : 328,
+				"text" : "Beat Tolerance%",
+				"type" : "slider",
+				"value" : 0
+			},
+			"barcolor" : 
+			{
+				"condition" : "barcolortype.value == 1",
+				"order" : 330,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"baropacity" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 335,
+				"text" : "Opacity%",
+				"type" : "slider",
+				"value" : 100
+			},
+			"barwidth" : 
+			{
+				"max" : 40,
+				"min" : 1,
+				"order" : 340,
+				"text" : "Width",
+				"type" : "slider",
+				"value" : 1
+			},
+			"barheight" : 
+			{
+				"max" : 3000,
+				"min" : 0,
+				"order" : 345,
+				"text" : "Max-Height",
+				"type" : "slider",
+				"value" : 100
+			},
+			"barsheight" : 
+			{
+				"order" : 350,
+				"text" : "<p>Max-Height multiplies basic bar height for all bars</p>",
+				"type" : "text"
+			},
+			"autobarsrotate" : 
+			{
+				"order" : 355,
+				"text" : "Auto Rotate",
+				"type" : "bool",
+				"value" : false
+			},
+			"barsarc" : 
+			{
+				"max" : 360,
+				"min" : 0,
+				"order" : 360,
+				"text" : "Bars arc",
+				"type" : "slider",
+				"value" : 360
+			},	
+			"autobarsrotatespeed" :
+			{
+				"condition" : "autobarsrotate.value",
+				"max" : 20,
+				"min" : -20,
+				"order" : 365,
+				"text" : "Rotation Speed",
+				"type" : "slider",
+				"value" : 0
+			},
+			"barsrotate" : 
+			{
+				"condition" : "autobarsrotate.value == false",
+				"max" : 360,
+				"min" : 0,
+				"order" : 370,
+				"text" : "Rotate bars around the circle",
+				"type" : "slider",
+				"value" : 270
+			},
+			"userspectrumrotation" : 
+			{
+				"max" : 128,
+				"min" : 0,
+				"order" : 371,
+				"text" : "Rotating audio Spectrum",
+				"type" : "slider",
+				"value" : 0
+			},
+			"userrainbowrotate" : 
+			{
+				"condition" : "barcolortype.value == 2",
+				"max" : 128,
+				"min" : 0,
+				"order" : 372,
+				"text" : "Rotate rainbow",
+				"type" : "slider",
+				"value" : 0
+			},
+			"audiocount" : 
+			{
+				"max" : 896,
+				"min" : 1,
+				"order" : 373,
+				"text" : "Audio Count",
+				"type" : "slider",
+				"value" : 128
+			},
+			"audiocount1" : 
+			{
+				"order" : 374,
+				"text" : "<p>To have full audio array <br> 128 256 384 512 640 768 896</p>",
+				"type" : "text"
+			},
+			"particles" : 
+			{
+				"order" : 390,
+				"text" : "<h4>Particles</h4>",
+				"type" : "text"
+			},
+			"particlestyle" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Style1",
+						"value" : 1
+					},
+					{
+						"label" : "Style2",
+						"value" : 2
+					}
+				],
+				"order" : 391,
+				"text" : "Particle model",
+				"type" : "combo",
+				"value" : 1
+			},
+			"particlerainbow":
+			{
+				"condition" : "particlestyle.value == 1",
+				"order" : 395,
+				"text" : "Rainbow Colors",
+				"type" : "bool",
+				"value" : false
+			},
+			"twinkling":
+			{
+				"condition" : "particlerainbow.value && particlestyle.value == 1",
+				"order" : 400,
+				"text" : "Twinkling particles",
+				"type" : "bool",
+				"value" : false
+			},
+			"particlecolor" : 
+			{
+				"condition" : "particlerainbow.value == false",
+				"order" : 405,
+				"text" : "Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"particleopacity" : 
+			{
+				"condition" : "particlestyle.value == 1",
+				"max" : 100,
+				"min" : 0,
+				"order" : 410,
+				"text" : "Opacity%",
+				"type" : "slider",
+				"value" : 100
+			},
+			"particleradius" : 
+			{
+				"max" : 40,
+				"min" : 0,
+				"order" : 415,
+				"text" : "Size Multiplier",
+				"type" : "slider",
+				"value" : 0
+			},
+			"particlenum" : 
+			{
+				"condition" : "particlestyle.value == 1",
+				"max" : 25,
+				"min" : 0,
+				"order" : 420,
+				"text" : "no. of Particles",
+				"type" : "slider",
+				"value" : 2
+			},
+			"particlestyle2num" : 
+			{
+				"condition" : "particlestyle.value == 2",
+				"options" : 
+				[
+					{
+						"label" : "50",
+						"value" : 1
+					},
+					{
+						"label" : "100",
+						"value" : 2
+					},
+					{
+						"label" : "250",
+						"value" : 3
+					},
+					{
+						"label" : "500",
+						"value" : 4
+					},
+					{
+						"label" : "1000",
+						"value" : 5
+					},
+					{
+						"label" : "1500",
+						"value" : 6
+					},
+					{
+						"label" : "2000",
+						"value" : 7
+					},
+					{
+						"label" : "2500",
+						"value" : 8
+					},
+					{
+						"label" : "3000",
+						"value" : 9
+					},
+					{
+						"label" : "3500",
+						"value" : 10
+					},
+					{
+						"label" : "4000",
+						"value" : 11
+					},
+					{
+						"label" : "4500",
+						"value" : 12
+					},
+					{
+						"label" : "5000",
+						"value" : 13
+					}
+				],
+				"order" : 420,
+				"text" : "no. of Particles",
+				"type" : "combo",
+				"value" : 2
+			},
+			"particlenumaudio" :
+			{
+				"condition" : "particlestyle.value == 1",
+				"max" : 25,
+				"min" : 0,
+				"order" : 425,
+				"text" : "Particles(no Audio)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"bassmultiplier" : 
+			{
+				"order" : 1000,
+				"text" : "<h4>Bass Effect Multiplier</h4>",
+				"type" : "text"
+			},
+			"bassshakemultiplier" : 
+			{
+				"max" : 25,
+				"min" : 0,
+				"order" : 1001,
+				"text" : "Bass Shake",
+				"type" : "slider",
+				"value" : 12
+			},
+			"bassshaketolerance" : 
+			{
+				"max" : 100,
+				"min" : -100,
+				"order" : 1002,
+				"text" : "BassShake Tolerance!",
+				"type" : "slider",
+				"value" : 0
+			},
+			"bbassmultiplier" : 
+			{
+				"max" : 800,
+				"min" : 0,
+				"order" : 1005,
+				"text" : "Bars bass",
+				"type" : "slider",
+				"value" : 80
+			},
+			"cbassmultiplier" : 
+			{
+				"max" : 800,
+				"min" : 0,
+				"order" : 1010,
+				"text" : "Circle bass",
+				"type" : "slider",
+				"value" : 80
+			},
+			"c1bassmultiplier" : 
+			{
+				"condition" : "secondcircle.value",
+				"max" : 800,
+				"min" : 0,
+				"order" : 1013,
+				"text" : "Circle2 bass",
+				"type" : "slider",
+				"value" : 80
+			},
+			"txtbassmultiplier" : 
+			{
+				"condition" : "showtext.value",
+				"max" : 640,
+				"min" : 0,
+				"order" : 1015,
+				"text" : "Text bass",
+				"type" : "slider",
+				"value" : 80
+			},
+			"clkbassmultiplier" : 
+			{
+				"condition" : "showclock.value",
+				"max" : 640,
+				"min" : 0,
+				"order" : 1020,
+				"text" : "Clock bass",
+				"type" : "slider",
+				"value" : 80
+			},
+			"overlay" : 
+			{
+				"order" : 500,
+				"text" : "<h4>Overlay</h4>",
+				"type" : "text"
+			},
+			"backgroundimagef" : 
+			{
+				"order" : 505,
+				"text" : "Image",
+				"type" : "file",
+				"value" : ""
+			},
+			"imageoptions1" : 
+			{
+				"condition" : "backgroundimagef.value",
+				"options" : 
+				[
+					{
+						"label" : "Initial",
+						"value" : 1
+					},
+					{
+						"label" : "Cover",
+						"value" : 2
+					},
+					{
+						"label" : "Contain",
+						"value" : 3
+					}
+				],
+				"order" : 507,
+				"text" : "OverImageOptions",
+				"type" : "combo",
+				"value" : 2
+			},
+			"horizontal" : 
+			{
+				"condition" : "backgroundimagef.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 510,
+				"text" : "PosX",
+				"type" : "slider",
+				"value" :0
+			},
+			"vertical" : 
+			{
+				"condition" : "backgroundimagef.value",
+				"max" : 3000,
+				"min" : -3000,
+				"order" : 520,
+				"text" : "PosY",
+				"type" : "slider",
+				"value" : 0
+			},
+			"frameratepersecond":
+			{
+				"order" : 1550,
+				"text" : "Show fps Warning(below 35)",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "Scheme color",
+				"type" : "color",
+				"value" : "1 1 1"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Music" ],
+	"title" : "Audio Visualizer",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 893418273
+}

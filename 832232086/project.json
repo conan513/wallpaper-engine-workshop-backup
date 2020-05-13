@@ -1,0 +1,22 @@
+{
+	"description" : "For the Alliance!\nPlease leave comments for the game flags you want, therefore I will consider to make them in my future projects.",
+	"file" : "MIR Flag_1.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "World of Warcraft - Waving Alliance Flag",
+	"type" : "video",
+	"visibility" : "public"
+}

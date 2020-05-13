@@ -1,0 +1,22 @@
+{
+	"description" : "Horde animated waving flag looped in 4K. Made by myself enjoy! see my collection for more. :)",
+	"file" : "Horde flag 4K loop.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Horde Waving Flag 4K - World Of Warcraft",
+	"type" : "video",
+	"visibility" : "public"
+}

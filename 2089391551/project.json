@@ -1,0 +1,81 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "\"Destiny 2 - Heat [4K - Customizable]\"\n\n- Resolution: 3840*2160\n- Original Artwork: https://images.hdqwalls.com/download/8k-destiny-2-8v-7680x4320.jpg.\n- This isn't a loop, everything is rendered in real-time within the Wallpaper Engine application, you're just watching a .gif preview.\n- My website: https://windowscustomization.com/",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"audio_responsive_background" : 
+			{
+				"order" : 105,
+				"text" : "Audio Responsive Background",
+				"type" : "bool",
+				"value" : true
+			},
+			"bottom_haze_effects" : 
+			{
+				"order" : 106,
+				"text" : "Bottom Haze",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock" : 
+			{
+				"order" : 103,
+				"text" : "Clock",
+				"type" : "bool",
+				"value" : true
+			},
+			"depth_of_field" : 
+			{
+				"order" : 107,
+				"text" : "Depth of Field",
+				"type" : "bool",
+				"value" : true
+			},
+			"letterbox" : 
+			{
+				"order" : 104,
+				"text" : "Letterbox",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 100,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.000 0.000 0.000"
+			},
+			"secondary_color" : 
+			{
+				"order" : 101,
+				"text" : "Main Color",
+				"type" : "color",
+				"value" : "1 0 1"
+			},
+			"secondary_color2" : 
+			{
+				"order" : 102,
+				"text" : "Secondary Color",
+				"type" : "color",
+				"value" : "0 1 1"
+			},
+			"visualizer" : 
+			{
+				"order" : 100,
+				"text" : "Visualizer",
+				"type" : "bool",
+				"value" : true
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "Destiny 2 - Heat [4K - Customizable]",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2089391551"
+}

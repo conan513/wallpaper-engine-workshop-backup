@@ -1,0 +1,23 @@
+{
+	"description" : "Le Blue Aperture",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Aperture Wallpaper 1",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : 960368411
+}

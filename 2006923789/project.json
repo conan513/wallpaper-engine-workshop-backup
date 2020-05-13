@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "1920x1080 resolution user, please adjust \"position\" to 11，To ensure the best viewing experience\n正常1920x1080的同学把“位置”调到11以确保最佳观赏体验",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.812 0.431 0.522"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Relaxing" ],
+	"title" : "[宽屏][放松向]晚霞夕阳是回家的讯号 （HaNa）",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2006923789"
+}

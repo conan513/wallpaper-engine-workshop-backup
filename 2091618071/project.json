@@ -1,0 +1,514 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Artwork by Syndicate Studio https://www.behance.net/gallery/78373581/KITETSU-sacred-geometry\r\n////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\r\n1920x1080 version: https://steamcommunity.com/sharedfiles/filedetails/?id=2092626672",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"3whatisthis_spin_speed_l" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 137,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Whatisthis Spin Speed L",
+				"type" : "slider",
+				"value" : -2
+			},
+			"3whatisthis_spin_speed_r" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 138,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Whatisthis Spin Speed R",
+				"type" : "slider",
+				"value" : -2
+			},
+			"all_color_change_on_off" : 
+			{
+				"order" : 101,
+				"text" : "Overall Color On/Off",
+				"type" : "bool",
+				"value" : false
+			},
+			"all_color_change_power" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 103,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Overall Color Power",
+				"type" : "slider",
+				"value" : 1
+			},
+			"animation_color" : 
+			{
+				"order" : 108,
+				"text" : "Animation Color",
+				"type" : "color",
+				"value" : "1 0.10980392156862745 0.3058823529411765"
+			},
+			"artwork_author_show_on_off" : 
+			{
+				"order" : 144,
+				"text" : "Artwork Author Show on/off",
+				"type" : "bool",
+				"value" : true
+			},
+			"background_color" : 
+			{
+				"order" : 109,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"background_color_power" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 110,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Background Color Power",
+				"type" : "slider",
+				"value" : 0
+			},
+			"blade_whatisthis_spin_speed_l" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 135,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Blade Whatisthis Spin Speed L",
+				"type" : "slider",
+				"value" : 10
+			},
+			"blade_whatisthis_spin_speed_r" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 136,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Blade Whatisthis Spin Speed R",
+				"type" : "slider",
+				"value" : 10
+			},
+			"color_of_geometric_shapes" : 
+			{
+				"order" : 107,
+				"text" : "Geometric Shapes Color",
+				"type" : "color",
+				"value" : "1 0.10980392156862745 0.3058823529411765"
+			},
+			"cursor_color" : 
+			{
+				"order" : 140,
+				"text" : "Cursor Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"cursor_mode" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Katana",
+						"value" : "1"
+					},
+					{
+						"label" : "Audio Responsive",
+						"value" : "2"
+					},
+					{
+						"label" : "Audio Responsive 2",
+						"value" : "3"
+					},
+					{
+						"label" : "Normal Mode",
+						"value" : "4"
+					},
+					{
+						"label" : "Off",
+						"value" : "5"
+					}
+				],
+				"order" : 139,
+				"text" : "Cursor Mode",
+				"type" : "combo",
+				"value" : "4"
+			},
+			"cursor_opacity" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0,
+				"order" : 141,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Cursor Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"cursor_texture_count" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0,
+				"order" : 143,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Cursor Texture Count",
+				"type" : "slider",
+				"value" : 1
+			},
+			"cursos_size" : 
+			{
+				"fraction" : true,
+				"max" : 10,
+				"min" : 0,
+				"order" : 142,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Cursos Size(only for ✶)",
+				"type" : "slider",
+				"value" : 4
+			},
+			"dotted_circle_spinspeed_l1" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 132,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Dotted Circle SpinSpeed L1",
+				"type" : "slider",
+				"value" : 1
+			},
+			"dotted_circle_spinspeed_l2" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 134,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Dotted Circle SpinSpeed L2",
+				"type" : "slider",
+				"value" : -1
+			},
+			"dotted_circle_spinspeed_r1" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 131,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Dotted Circle SpinSpeed R1",
+				"type" : "slider",
+				"value" : -1
+			},
+			"dotted_circle_spinspeed_r2" : 
+			{
+				"fraction" : true,
+				"max" : 50,
+				"min" : -50,
+				"order" : 133,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Dotted Circle SpinSpeed R2",
+				"type" : "slider",
+				"value" : 1
+			},
+			"fire_effect_color" : 
+			{
+				"order" : 124,
+				"text" : "Fire Effect Color",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"fire_effect_mode" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Audio Responsive",
+						"value" : "1"
+					},
+					{
+						"label" : "Normal Mode",
+						"value" : "2"
+					},
+					{
+						"label" : "Off",
+						"value" : "3"
+					}
+				],
+				"order" : 123,
+				"text" : "Fire Effect Mode",
+				"type" : "combo",
+				"value" : "2"
+			},
+			"fire_effect_opacity" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 125,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Fire Effect Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"fire_effect_particle_count" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0,
+				"order" : 127,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Fire Effect Particle Count",
+				"type" : "slider",
+				"value" : 0.5
+			},
+			"fire_effect_particle_lifetime" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0,
+				"order" : 126,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Fire Effect Particle Lifetime",
+				"type" : "slider",
+				"value" : 2
+			},
+			"fire_effect_playback_rate" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 129,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Fire Effect Playback rate",
+				"type" : "slider",
+				"value" : 1
+			},
+			"fire_effect_size" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 128,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Fire Effect Size",
+				"type" : "slider",
+				"value" : 1
+			},
+			"fire_effect_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 130,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Fire Effect Speed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"full_version_may_cause_high_load_on_gpu_" : 
+			{
+				"order" : 100,
+				"text" : "FULL VERSION",
+				"type" : "bool",
+				"value" : true
+			},
+			"left_eye_color" : 
+			{
+				"order" : 111,
+				"text" : "Left Eye Color",
+				"type" : "color",
+				"value" : "1 0.10980392156862745 0.3058823529411765"
+			},
+			"lines_visualizer_color" : 
+			{
+				"order" : 120,
+				"text" : "Lines Visualizer Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"lines_visualizer_mode" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Line Type 1",
+						"value" : "1"
+					},
+					{
+						"label" : "Line Type 2",
+						"value" : "2"
+					},
+					{
+						"label" : "Off",
+						"value" : "3"
+					}
+				],
+				"order" : 119,
+				"text" : "Lines Visualizer Mode",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"lines_visualizer_opacity" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0,
+				"order" : 121,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Lines Visualizer Opacity",
+				"type" : "slider",
+				"value" : 0.5
+			},
+			"lines_visualizer_size" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 122,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Lines Visualizer Size",
+				"type" : "slider",
+				"value" : 1
+			},
+			"overall_color" : 
+			{
+				"order" : 102,
+				"text" : "Overall Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"overall_sat_power" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 105,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Overall Sat Power",
+				"type" : "slider",
+				"value" : 1
+			},
+			"overall_saturation" : 
+			{
+				"order" : 106,
+				"text" : "Overall Saturation",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"overall_saturation_change" : 
+			{
+				"order" : 104,
+				"text" : "Overall Saturation On/Off",
+				"type" : "bool",
+				"value" : false
+			},
+			"right_eye_color" : 
+			{
+				"order" : 112,
+				"text" : "Right Eye Color",
+				"type" : "color",
+				"value" : "1 0.10980392156862745 0.3058823529411765"
+			},
+			"samurai_color" : 
+			{
+				"order" : 114,
+				"text" : "Samurai Color",
+				"type" : "color",
+				"value" : "1 0.10980392156862745 0.3058823529411765"
+			},
+			"samurai_color_change_on_off" : 
+			{
+				"order" : 113,
+				"text" : "Samurai Color on/off",
+				"type" : "bool",
+				"value" : false
+			},
+			"samurai_color_change_power" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 115,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Samurai Color Power",
+				"type" : "slider",
+				"value" : 1
+			},
+			"samurai_sat_power" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 117,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Samurai Sat Power",
+				"type" : "slider",
+				"value" : 1
+			},
+			"samurai_saturation" : 
+			{
+				"order" : 118,
+				"text" : "Samurai Saturation",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"samurai_saturation_on_off" : 
+			{
+				"order" : 116,
+				"text" : "Samurai Saturation on/off",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 100,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.000 0.020 0.137"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Fantasy" ],
+	"title" : "𝐊𝐈𝐓𝐄𝐓𝐒𝐔 𝐒𝐚𝐦𝐮𝐫𝐚𝐢 𝐖𝐚𝐫 𝟒𝐊",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2091618071"
+}

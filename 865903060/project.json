@@ -1,0 +1,22 @@
+{
+	"description" : "An animated version of D.Va repairing her mech\n(I am not the author of the image, I am only responsible for animating it)",
+	"file" : "DVa-Final.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.18823529411764706 0.4470588235294118 0.7333333333333333"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Technology" ],
+	"title" : "D.Va Animated Mech Repair",
+	"type" : "video",
+	"visibility" : "public"
+}

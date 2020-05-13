@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Size 3440x1440",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.306 0.239 0.184"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Warhammer",
+	"type" : "scene",
+	"visibility" : "public"
+}

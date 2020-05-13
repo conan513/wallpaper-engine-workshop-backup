@@ -1,0 +1,69 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "[b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1727210908]\u22c6 Check my all approved wallpapers here! \u22c6[/url][/b]\n\nPlease make sure to follow artist below for more amazing works!\n\u274a Support author: https://www.artstation.com/weiqian1988\n\n\u266a Nichibotsu (feat. Mahur)\n\n\u2022 Please contact me only via [url=https://steamcommunity.com/id/historykhistoria]Steam.[/url]\n\n[img]https://i.imgur.com/p7Fv1Z6.gif[/img]",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"ambience_volume" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 101,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Ambience Volume",
+				"type" : "slider",
+				"value" : 0.34999999999999998
+			},
+			"darkness" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 103,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Darkness",
+				"type" : "slider",
+				"value" : 0.5
+			},
+			"music_volume" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 100,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Music Volume",
+				"type" : "slider",
+				"value" : 0.29999999999999999
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.502 0.333 0.286"
+			},
+			"screen_flashing" : 
+			{
+				"order" : 102,
+				"text" : "Screen Dimming",
+				"type" : "bool",
+				"value" : true
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Relaxing" ],
+	"title" : "\u82b1\u4e0e\u5251\u8d44\u6599\u7247 by QIAN WEI",
+	"type" : "scene",
+	"version" : 7,
+	"visibility" : "public",
+	"workshopid" : "2092117131"
+}

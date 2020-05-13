@@ -1,0 +1,24 @@
+{
+	"approved" : true,
+	"description" : "In-game clip from Star Citizen Alpha 2.6.1.\nThis version is 21:9 3440x1440 @ 60fps.\nIt's a 18 MB, 90 second clip that loops seamlessly.\n\nAlternate Versions:\n-------------------------------------\n16:9 1920x1080 60fps version:\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=880584606\n\n16:9 2560x1440 60fps version:\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=880529650\n\n21:9 3440x1440 60fps version:\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=880323286\n\n4:3 1920x1440 60fps version:\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=880560868\n\n-------------------------------------\n\nBased on a screenshot I had taken called \"Penthouse View in Area 18\":\nhttps://flic.kr/p/LiFi4J\n\nReShade was used to apply:\n- Deband\n- Filmgrain\n- FXAA\n- Levels\n- Vibrance\n\n►————————————————————◄\n\nVIEW MY OTHER WALLPAPER ENGINE WALLPAPERS:\nhttp://steamcommunity.com/id/hasgaha/myworkshopfiles/?appid=431960\n\n►————————————————————◄\n\nABOUT STAR CITIZEN: \nhttps://robertsspaceindustries.com/about-the-game/\n\nBECOME A STAR CITIZEN and get 5,000 free Credits by using this URL with my referral code, STAR-XRZN-DC2R, at the Roberts Space Industries (RSI) website:\nhttp://hasgaha.com/join-starcitizen/\n\n►————————————————————◄\n\nWEB: http://mr.hasgaha.com\nTWITTER: @Mr_Hasgaha: http://twitter.com/Mr_Hasgaha\nFLICKR: https://www.flickr.com/photos/hasgaha/\nYOUTUBE: https://youtube.com/mrhasgahaland",
+	"file" : "SC-2.6.1_20170309_105603_ArcCorp-Still_vignette_3440x1440.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "Star Citizen \"Area 18 Penthouse View\" 21:9 3440x1440",
+	"type" : "video",
+	"visibility" : "public",
+	"workshopid" : 880323286
+}

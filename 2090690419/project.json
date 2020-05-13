@@ -1,0 +1,47 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "I only noticed that someone already have done this wallpaper after I finished it, so after wasting my time, I decided to publish it anyway. \nSAD",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"2b_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 100,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "2B speed",
+				"type" : "slider",
+				"value" : 2.5
+			},
+			"a2_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 101,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "A2 speed",
+				"type" : "slider",
+				"value" : 2
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.635 0.690 0.741"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Game" ],
+	"title" : "2B and A2 - NieR:Automata (drawn by Sciamano240)",
+	"type" : "scene"
+}

@@ -1,0 +1,31 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "[b]Original Artwork by: Liu CiteMer\r\n⠀• ⠀[u]Artist's links[/u] ›  [url=weibo.com/citemer/]ᴡᴇɪʙᴏ⠀[/url]\r\n⠀• ⠀[u]Artist's links[/u] ›  [url=https://twitter.com/citemer]ᴛᴡɪᴛᴛᴇʀ⠀[/url]\r\n⠀• ⠀[u]Artist's links[/u] ›  [url=https://www.artstation.com/citemer]ᴀʀᴛsᴛᴀᴛɪᴏɴ⠀[/url]\r\n\r\n ✨  Check out my [url=https://steamcommunity.com/profiles/76561198215757219/myworkshopfiles/]workshop[/url] for other amazing wallpapers! ✨[/b]\r\n                                                                                                                         \r\n[img]https://i.imgur.com/p7Fv1Z6.gif[/img]",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"blinking" : 
+			{
+				"order" : 100,
+				"text" : "Blinking",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "Coven Morgana the Ashen Owl - League of Legends",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2088653891"
+}

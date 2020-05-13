@@ -1,0 +1,584 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "To celebrate the new official Razer Chroma support.\r\nThe goal for this wallpaper was simple, lots of interactivity, audio responsiveness and yes rainbow effects (Many).\r\n\r\n[h1][b] TIP : Interactive wallpapers can be enjoyed without the windows  blue selection box. I recommend assigning a hotkey  to toggle hide desktop icons (which can be done in wallpaper engine's settings).[/b][/h1]\r\n\r\n[b]Main Features:\r\n* A lot of different Chroma effects can be achieved.\r\n* 10 Razer Wallpaper Backgrounds to choose from (11 backgrounds in total incl. black default).\r\n* Custom Color, Rainbow Color and Audio Rainbow options.\r\n* Mouse Interactive  Chroma Ring, Ring and Trail particles.\r\n* Bounce, Spin, Drag and Drop the logo.\r\n* Mouse Click and hold for some extra Chroma!\r\n* Logo Scale and God Rays are audio responsive.\r\n* Plus a ton of other options such as Bloom and Parallax options.\r\n* Separate Clock and Date (toggle-able, drag and drop + all Chroma and Rainbow Styles).\r\n[/b]\r\n\r\n[b]Notes:\r\n*Logo can be relocated to the center by adjusting Bounce Speed to 0.[/b]\r\n\r\nUpdates:\r\n\r\n21/02/2020\r\n* Added [b]10[/b] Razer wallpapers as backgrounds that can be selected from a combo menu (Black is still default).\r\n* Added Separate Clock and Date (I was not going to add any to begin with but decided to do it).\r\nBoth can be dragged and dropped around the screen, both can be toggled on and off and both have all the Chroma Styles and rainbow settings as the other effects, which can be manipulated independently as well.\r\n\r\nCredits:\r\n* RAZER\r\n\r\nScripting:\r\n* Big thanks to OMGParticles! For carrying me through Javascript one line at a time!\r\n* Ass Pancakes - Emit particle on click script.\r\n* Thedarkshaddow (I'm sure I've got one of his scripts in here somewhere, I always have lol).\r\n* Wallpaper Engine Team!\r\n\r\nLet me know what you think!\r\n\r\n[b]Want a Quartz version? Go here:\r\n\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2012250115\r\n\r\nOr here:\r\n\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2004893596[/b]\r\n\r\nTags: LED, Razer, Corsair, Chroma, ICUE.",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"audio_kaleidoscope" : 
+			{
+				"order" : 148,
+				"text" : "Audio Kaleidoscope",
+				"type" : "bool",
+				"value" : false
+			},
+			"audio_pulse" : 
+			{
+				"order" : 149,
+				"text" : "Audio Pulse",
+				"type" : "bool",
+				"value" : true
+			},
+			"audio_screen_shake" : 
+			{
+				"order" : 147,
+				"text" : "Audio Screen Shake",
+				"type" : "bool",
+				"value" : true
+			},
+			"background_wallpaper" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Byte",
+						"value" : "1"
+					},
+					{
+						"label" : "Chroma",
+						"value" : "2"
+					},
+					{
+						"label" : "Crystal",
+						"value" : "3"
+					},
+					{
+						"label" : "Graphite",
+						"value" : "4"
+					},
+					{
+						"label" : "Prism",
+						"value" : "5"
+					},
+					{
+						"label" : "Ridges",
+						"value" : "6"
+					},
+					{
+						"label" : "Scatter",
+						"value" : "7"
+					},
+					{
+						"label" : "Swarm",
+						"value" : "8"
+					},
+					{
+						"label" : "Wave",
+						"value" : "9"
+					},
+					{
+						"label" : "Weave",
+						"value" : "10"
+					},
+					{
+						"label" : "Disabled",
+						"value" : "11"
+					}
+				],
+				"order" : 100,
+				"text" : "Background Wallpaper",
+				"type" : "combo",
+				"value" : "11"
+			},
+			"bloom_strength" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 129,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Bloom Strength",
+				"type" : "slider",
+				"value" : 2
+			},
+			"bloom_threshold" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 130,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Bloom Threshold",
+				"type" : "slider",
+				"value" : 0.65000000000000002
+			},
+			"bounce_speed" : 
+			{
+				"fraction" : true,
+				"max" : 200,
+				"min" : 0,
+				"order" : 126,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Bounce Speed",
+				"type" : "slider",
+				"value" : 100
+			},
+			"camera_parallax" : 
+			{
+				"order" : 131,
+				"text" : "Parallax",
+				"type" : "bool",
+				"value" : false
+			},
+			"chroma_color" : 
+			{
+				"order" : 111,
+				"text" : "Chroma  Ring Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"chroma_rainbow" : 
+			{
+				"order" : 112,
+				"text" : "Chroma Ring Rainbow",
+				"type" : "bool",
+				"value" : false
+			},
+			"chroma_rainbow_audio" : 
+			{
+				"order" : 113,
+				"text" : "Chroma Ring Rainbow Audio",
+				"type" : "bool",
+				"value" : false
+			},
+			"chroma_rainbow_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 114,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Chroma Rainbow Speed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"chroma_ring_particle" : 
+			{
+				"order" : 110,
+				"text" : "Chroma Ring Particle",
+				"type" : "bool",
+				"value" : true
+			},
+			"chroma_styles" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Chroma Circular",
+						"value" : "1"
+					},
+					{
+						"label" : "Chroma Spin",
+						"value" : "2"
+					},
+					{
+						"label" : "Chroma Scroll",
+						"value" : "3"
+					},
+					{
+						"label" : "Chroma Spiral",
+						"value" : "4"
+					},
+					{
+						"label" : "Chroma Burst",
+						"value" : "5"
+					},
+					{
+						"label" : "Disabled",
+						"value" : "6"
+					}
+				],
+				"order" : 102,
+				"text" : "Razer Chroma Styles",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"click_rotating_rings" : 
+			{
+				"order" : 125,
+				"text" : "Click Rings Particle",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock" : 
+			{
+				"order" : 135,
+				"text" : "Clock",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock_chroma_styles" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Chroma Circular",
+						"value" : "1"
+					},
+					{
+						"label" : "Chroma Spin",
+						"value" : "2"
+					},
+					{
+						"label" : "Chroma Scroll",
+						"value" : "3"
+					},
+					{
+						"label" : "Chroma Spiral",
+						"value" : "4"
+					},
+					{
+						"label" : "Chroma Burst",
+						"value" : "5"
+					},
+					{
+						"label" : "Disabled",
+						"value" : "6"
+					}
+				],
+				"order" : 136,
+				"text" : "Clock Chroma Styles",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"clock_color" : 
+			{
+				"order" : 137,
+				"text" : "Clock Color",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"clock_rainbow" : 
+			{
+				"order" : 138,
+				"text" : "Clock Rainbow",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock_rainbow_audio" : 
+			{
+				"order" : 139,
+				"text" : "Clock Rainbow Audio",
+				"type" : "bool",
+				"value" : false
+			},
+			"clock_rainbow_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 140,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Clock Rainbow Speed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"color" : 
+			{
+				"order" : 106,
+				"text" : "Razer Color",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"date" : 
+			{
+				"order" : 141,
+				"text" : "Date",
+				"type" : "bool",
+				"value" : true
+			},
+			"date_chroma_styles" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "Chroma Circular",
+						"value" : "1"
+					},
+					{
+						"label" : "Chroma Spin",
+						"value" : "2"
+					},
+					{
+						"label" : "Chroma Scroll",
+						"value" : "3"
+					},
+					{
+						"label" : "Chroma Spiral",
+						"value" : "4"
+					},
+					{
+						"label" : "Chroma Burst",
+						"value" : "5"
+					},
+					{
+						"label" : "Disabled",
+						"value" : "6"
+					}
+				],
+				"order" : 142,
+				"text" : "Date Chroma Styles",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"date_color" : 
+			{
+				"order" : 143,
+				"text" : "Date Color",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"date_rainbow" : 
+			{
+				"order" : 144,
+				"text" : "Date Rainbow",
+				"type" : "bool",
+				"value" : true
+			},
+			"date_rainbow_audio" : 
+			{
+				"order" : 145,
+				"text" : "Date Rainbow Audio",
+				"type" : "bool",
+				"value" : false
+			},
+			"date_rainbow_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 146,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Date Rainbow Speed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"god_rays" : 
+			{
+				"order" : 128,
+				"text" : "God Rays",
+				"type" : "bool",
+				"value" : true
+			},
+			"parallax_amount" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : 0,
+				"order" : 133,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Parallax Amount",
+				"type" : "slider",
+				"value" : 0.5
+			},
+			"parallax_delay" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 134,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Parallax Delay",
+				"type" : "slider",
+				"value" : 0.10000000000000001
+			},
+			"parallax_mouse" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : -1,
+				"order" : 132,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Parallax Mouse",
+				"type" : "slider",
+				"value" : 0.10000000000000001
+			},
+			"rainbow" : 
+			{
+				"order" : 108,
+				"text" : "Rainbow",
+				"type" : "bool",
+				"value" : true
+			},
+			"rainbow_audio" : 
+			{
+				"order" : 107,
+				"text" : "Rainbow Audio",
+				"type" : "bool",
+				"value" : false
+			},
+			"rainbow_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 109,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Rainbow Speed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"razer" : 
+			{
+				"order" : 101,
+				"text" : "Razer",
+				"type" : "bool",
+				"value" : true
+			},
+			"razer_chroma_scroll_angle" : 
+			{
+				"fraction" : true,
+				"max" : 4.71,
+				"min" : 0,
+				"order" : 104,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Razer Chroma Scroll Angle",
+				"type" : "slider",
+				"value" : 1.5700000000000001
+			},
+			"razer_chroma_scroll_speed" : 
+			{
+				"fraction" : true,
+				"max" : 2,
+				"min" : -2,
+				"order" : 105,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Razer Chroma Scroll Speed",
+				"type" : "slider",
+				"value" : 0.5
+			},
+			"razer_chroma_spin" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : -5,
+				"order" : 103,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Razer Chroma Spin",
+				"type" : "slider",
+				"value" : -1
+			},
+			"ring_color" : 
+			{
+				"order" : 116,
+				"text" : "Ring Color",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"ring_particle" : 
+			{
+				"order" : 115,
+				"text" : "Ring Particle",
+				"type" : "bool",
+				"value" : true
+			},
+			"ring_rainbow" : 
+			{
+				"order" : 117,
+				"text" : "Ring Rainbow",
+				"type" : "bool",
+				"value" : true
+			},
+			"ring_rainbow_audio" : 
+			{
+				"order" : 118,
+				"text" : "Ring Rainbow Audio",
+				"type" : "bool",
+				"value" : false
+			},
+			"ring_rainbow_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 119,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Ring Rainbow Speed",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"order" : 100,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"spin" : 
+			{
+				"fraction" : true,
+				"max" : 4,
+				"min" : -4,
+				"order" : 127,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Spin",
+				"type" : "slider",
+				"value" : 1
+			},
+			"trail_color" : 
+			{
+				"order" : 121,
+				"text" : "Trail Color",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"trail_particle" : 
+			{
+				"order" : 120,
+				"text" : "Trail Particle",
+				"type" : "bool",
+				"value" : true
+			},
+			"trail_rainbow" : 
+			{
+				"order" : 122,
+				"text" : "Trail Rainbow",
+				"type" : "bool",
+				"value" : true
+			},
+			"trail_rainbow_audio" : 
+			{
+				"order" : 123,
+				"text" : "Trail Rainbow Audio",
+				"type" : "bool",
+				"value" : false
+			},
+			"trail_rainbow_speed" : 
+			{
+				"fraction" : true,
+				"max" : 5,
+				"min" : 0,
+				"order" : 124,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "Trail Rainbow Speed",
+				"type" : "slider",
+				"value" : 5
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Technology" ],
+	"title" : "Razer Chroma Interactive + Audio Effects",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "1998712615"
+}

@@ -1,0 +1,51 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "[b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1727210908]\u22c6 Check my all approved wallpapers here! \u22c6[/url][/b]\n\nPlease make sure to follow artist below for more amazing works!\n\u274a Support author: https://www.pixiv.net/en/users/17811492\n\u2022 https://www.twitch.tv/jh5067\n\u2022 https://www.facebook.com/profile.php?id=100007585272486\n\n\u266a Ren'ai wa Ikusa (\u604b\u611b\u306f\u6226)\n\n\u2022 Please contact me only via [url=https://steamcommunity.com/id/historykhistoria]Steam.[/url]\n\n[img]https://i.imgur.com/p7Fv1Z6.gif[/img]",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"body_head_movement" : 
+			{
+				"order" : 100,
+				"text" : "Body & Head Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"right_arm_movement" : 
+			{
+				"order" : 101,
+				"text" : "Right Arm Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"right_hand_movement" : 
+			{
+				"order" : 102,
+				"text" : "Right Hand Movement",
+				"type" : "bool",
+				"value" : true
+			},
+			"right_hand_movement_2" : 
+			{
+				"order" : 103,
+				"text" : "Right Hand Movement #2",
+				"type" : "bool",
+				"value" : true
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.25098039215686274 0.03137254901960784 0.03137254901960784"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Anime" ],
+	"title" : "Kaguya-Sama: Love is War @ 4K",
+	"type" : "scene",
+	"version" : 0
+}

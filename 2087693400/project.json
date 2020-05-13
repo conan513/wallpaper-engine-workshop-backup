@@ -1,0 +1,21 @@
+{
+	"description" : "Discord: https://discord.gg/ZgmuaXG\nTwitter : https://twitter.com/CJXandeRR\nArtstation : https://www.artstation.com/cjxander\nInstagram : https://www.instagram.com/cjxanderrr/\nTwitch : https://www.twitch.tv/cjxanderr\nWallpaper Engine : https://steamcommunity.com/id/CJXander\nFacebook : https://www.facebook.com/RefractArt/\n\nPaypal donations : paypal.me/cjxander",
+	"file" : "Lux 1080.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 0.6627450980392157 0"
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Game" ],
+	"title" : "Legends of Runeterra - LUX 1080p",
+	"type" : "video"
+}

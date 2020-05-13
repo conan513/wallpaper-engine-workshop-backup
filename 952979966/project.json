@@ -1,0 +1,22 @@
+{
+	"description" : "Just a test :P Basic!",
+	"file" : "Neon Sunset OC_1.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.8980392156862745 0.8784313725490196 0.8784313725490196"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Cyberpunk" ],
+	"title" : "Neon by PS2Nerd",
+	"type" : "video",
+	"visibility" : "public"
+}

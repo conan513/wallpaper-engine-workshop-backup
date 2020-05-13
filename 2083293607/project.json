@@ -1,0 +1,32 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Animation of hair, rain and panels. Neon clocks, custom text and ambience music.",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"name" : 
+			{
+				"order" : 100,
+				"text" : "Name",
+				"type" : "textinput",
+				"value" : "YOURNAME"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Anime" ],
+	"title" : "Zero Two , Darling in the Franxx by SuperKlever",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2083293607"
+}

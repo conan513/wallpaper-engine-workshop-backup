@@ -1,0 +1,25 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "𝘞𝘢𝘭𝘭𝘱𝘢𝘱𝘦𝘳 𝘰𝘧 𝘋𝘦𝘢𝘵𝘩𝘸𝘪𝘯𝘨 𝘵𝘩𝘦 𝘋𝘦𝘴𝘵𝘳𝘰𝘺𝘦𝘳.\n-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴-̴\n\nTime spent ~ 80 hours\n\nOriginal wallpaper was taken from: https://wallpapercave.com/\n(𝘩𝘵𝘵𝘱𝘴://𝘸𝘢𝘭𝘭𝘱𝘢𝘱𝘦𝘳𝘤𝘢𝘷𝘦.𝘤𝘰𝘮/𝘸𝘱/𝘗23𝘋4𝘑𝘩.𝘫𝘱𝘨)",
+	"file" : "Deathwing.mp4",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "World of Warcraft: Deathwing the Destroyer",
+	"type" : "video",
+	"visibility" : "public",
+	"workshopid" : "1910832809"
+}

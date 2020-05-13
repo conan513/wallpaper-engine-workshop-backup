@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "\"Among the deepest of our mining sites, the Magma Caves are a mellow 250-400 degrees and helpfully lit by the churning, molten innards of the planet. We advise that you do not touch anything not mandated by the mission objectives, as your employee insurance does not cover burns.\"\n\n- Resolution: 1920*1080.\n- Original Artwork: https://www.deeprockgalactic.com/wallpapers/.\n- I recommend using the \"cover\" alignment for this wallpaper.\n- This isn't a loop, everything is rendered in real-time within the Wallpaper Engine application, you're just watching a .gif preview.\n- My website: https://windowscustomization.com/",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.431 0.220 0.098"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "Deep Rock Galactic - Magma",
+	"type" : "scene",
+	"visibility" : "public",
+	"workshopid" : "2089540284"
+}

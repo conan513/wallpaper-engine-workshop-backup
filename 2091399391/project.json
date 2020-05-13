@@ -1,0 +1,117 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Mega Man X running along the highway.\n\nIn the future I plan to add a time of day system, and the ability to swap out various armor upgrades for X.\n\n\n\ntags: mega man megaman X video game SNES CRT retro pixel art city night lights time of day cyberpunk future robot cyborg",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"bg_speed" : 
+			{
+				"condition" : "false",
+				"fraction" : true,
+				"max" : 1,
+				"min" : -1,
+				"order" : 107,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "BG Speed",
+				"type" : "slider",
+				"value" : 0.17499999999999999
+			},
+			"crt_effect" : 
+			{
+				"fraction" : true,
+				"max" : 1,
+				"min" : 0,
+				"order" : 102,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "CRT Effect",
+				"type" : "slider",
+				"value" : 0.66000000000000003
+			},
+			"fg_speed" : 
+			{
+				"condition" : "false",
+				"fraction" : true,
+				"max" : 1,
+				"min" : -1,
+				"order" : 106,
+				"precision" : 2,
+				"step" : 0.10000000000000001,
+				"text" : "FG Speed",
+				"type" : "slider",
+				"value" : 0.42499999999999999
+			},
+			"foreground_lamps" : 
+			{
+				"order" : 104,
+				"text" : "Show Foreground Lamps",
+				"type" : "bool",
+				"value" : true
+			},
+			"low_precision_pixels" : 
+			{
+				"condition" : "false",
+				"order" : 108,
+				"text" : "Low precision pixels",
+				"type" : "bool",
+				"value" : false
+			},
+			"megaman_position" : 
+			{
+				"condition" : "show_megaman.value == true",
+				"fraction" : true,
+				"max" : 0.94999999999999996,
+				"min" : 0.050000000000000003,
+				"order" : 101,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Mega Man's Screen Position",
+				"type" : "slider",
+				"value" : 0.5
+			},
+			"perspective" : 
+			{
+				"fraction" : true,
+				"max" : 1.5,
+				"min" : 0,
+				"order" : 103,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Scene Depth",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"show_megaman" : 
+			{
+				"order" : 100,
+				"text" : "Show Mega Man",
+				"type" : "bool",
+				"value" : true
+			},
+			"vvv_dev_only_properties_vvv" : 
+			{
+				"condition" : "false",
+				"order" : 105,
+				"text" : "vv Dev Only Properties vv",
+				"type" : "textinput",
+				"value" : ""
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Game" ],
+	"title" : "Mega Man X - Endless Highway",
+	"type" : "scene",
+	"version" : 1,
+	"workshopid" : "2091399391"
+}
